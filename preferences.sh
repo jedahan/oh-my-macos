@@ -14,9 +14,8 @@ name="talon"
 
 ## Input Devices
 
-# Enable tap to click for this user and for the login screen
-defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 1
-defaults write -globalDomain com.apple.mouse.tapBehavior -int 1
+# Enable tap to click
+defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
 
 ## User Interface
 
