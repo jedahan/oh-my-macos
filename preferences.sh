@@ -9,9 +9,6 @@ name="talon"
   defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $name
 }
 
-# Ask for password after screen sleeps
-defaults write com.apple.screensaver askForPassword -bool true
-
 # Disable Gatekeeper
 [[ `spctl --status` == 'assessments disabled' ]] || sudo spctl --master-disable
 
