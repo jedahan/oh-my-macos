@@ -1,6 +1,11 @@
-# jedahan's Yosemite setup
+# jedahan's El Capitan setup
 
-Shell scripts for automated OSX machine setup. Requires [Xcode](https://developer.apple.com/downloads) and a network connection.
+Shell scripts for automated OSX machine setup.
+
+## Prerequisites
+
+* [XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) from the app store
+* [homebrew](https://brew.sh)
 
 ## Usage
 
