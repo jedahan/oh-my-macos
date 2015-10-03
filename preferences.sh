@@ -25,14 +25,8 @@ defaults write -globalDomain AppleInterfaceStyle -string Dark
 # Control + scroll for zooming
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 
-# Disable auto-correct
-defaults write -globalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-
-# Disable the dashboard
-defaults write com.apple.dashboard mcx-disabled -bool true
-
-# Disable the “Are you sure you want to open this application?” dialog
-defaults write com.apple.LaunchServices LSQuarantine -bool false
+# Automatically hide and show the menu bar
+defaults write -globalDomain _HIHideMenuBar -bool true
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
