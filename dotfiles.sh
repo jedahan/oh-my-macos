@@ -11,6 +11,7 @@ echo "installing prezto for zsh"
 git clone --recursive https://github.com/sorin-ionescu/prezto.git $HOME/.zprezto
 
 echo "symlinking dotfiles to home directory"
+export PATH=$HOME/.gems/bin:$PATH
 homesick clone jedahan/dotfiles && homesick symlink dotfiles
 
 echo "setting shell to zsh"
