@@ -15,10 +15,7 @@ export PATH=$HOME/.gems/bin:$PATH
 homesick clone jedahan/dotfiles && homesick symlink dotfiles
 
 echo "setting shell to zsh"
-chsh -s /bin/zsh
-
-echo "setting the boot logo"
-sudo cp BootLogo.png /System/Library/CoreServices/
+chsh -s $HOME/.homebrew/bin/zsh
 
 dnsmasq --version &>/dev/null && {
   echo "making *.dev resolve to 127.0.0.1"
