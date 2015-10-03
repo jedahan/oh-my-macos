@@ -5,13 +5,14 @@ tap 'neovim/neovim'
 
 brew 'caskroom/cask/brew-cask'
 cask 'firefox'
-cask 'tuxera-ntfs'
+brew 'git'
 cask 'iterm2'
 cask 'java'
-brew 'git'
-brew 'the_silver_searcher'
 brew 'neovim', args: ['HEAD']
+brew 'python3'
 cask 'slack'
+brew 'the_silver_searcher'
+cask 'tuxera-ntfs'
 
 brew 'aircrack-ng'
 brew 'android-sdk'
