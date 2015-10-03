@@ -19,8 +19,8 @@ defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
 
 ## User Interface
 
-# Disable volume feedback
-defaults write -globalDomain com.apple.sound.beep.feedback -int 0
+# Dark Interface
+defaults write -globalDomain AppleInterfaceStyle -string Dark
 
 # Control + scroll for zooming
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
