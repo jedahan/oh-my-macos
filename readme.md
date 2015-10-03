@@ -87,25 +87,18 @@ Neat things about this setup:
 
 Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 
-## Preinstall Checklist
+## Postinstall Checklist
 
 * Generate new ssh keys
-* Login to [App Store](www.apple.com/macosx/whats-new/app-store.html) and install:
-  * [MacPass](https://github.com/mstarke/MacPass)
-  * [XCode]()
-  * [Cinch](https://itunes.apple.com/us/app/cinch/id412529613?mt=12)
-  * [Textual](https://itunes.apple.com/us/app/textual-irc-client/id403012667?mt=12)
-  * [Twitter](https://itunes.apple.com/us/app/twitter/id409789998?mt=12)
-  * [Vox](https://itunes.apple.com/us/app/vox/id461369673?mt=12)
-* Set xcode to 18 point [inconsolata](http://www.levien.com/type/myfonts/inconsolata.html), dusk
-* Set textual to have command-[ switch across networks
-* Add [webster's dictionary](http://jsomers.net/blog/dictionary)
-* Login to [keybase](keybase.io)
-
-## Postinstall Checklist
 * Activate [alfred powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)
 * Set masterpassword username
-* Install uBlock for firefox
-* Install favicon addon for firefox
-* sudo easy_install neovim
-* compile youcompleteme
+* Sign into firefox sync
+* Login to [keybase](keybase.io)
+* Add [webster's dictionary](http://jsomers.net/blog/dictionary)
+
+Install from the app store
+  * [Master Password](https://itunes.apple.com/us/app/master-password-nothing-to/id662763204?mt=12)
+  * [Textual](https://itunes.apple.com/us/app/textual-irc-client/id403012667?mt=12)
+    * Set textual to have command-[ switch across networks
+  * [Twitter](https://itunes.apple.com/us/app/twitter/id409789998?mt=12)
+  * [Vox](https://itunes.apple.com/us/app/vox/id461369673?mt=12)
