@@ -6,6 +6,7 @@ Shell scripts for automated OSX machine setup.
 
 * [XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) from the app store
 * [homebrew](https://brew.sh)
+* set brew cask binarydir == $HOME/.homebrew/bin
 
 ## Usage
 
