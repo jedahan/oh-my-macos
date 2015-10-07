@@ -1,3 +1,9 @@
+# Alfred
+defaults write com.runningwithcrayons.Alfred-Preferences syncfolder -string "~/.homesick/repos/dotfiles/home/.alfred"
+
+# iTerm2
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/jedahan/.iterm2"
+
 # Master Password
 defaults write com.lyndir.lhunath.MasterPassword.Mac hidePasswords -bool true
 defaults write com.lyndir.lhunath.MasterPassword.Mac rememberLogin -bool true
