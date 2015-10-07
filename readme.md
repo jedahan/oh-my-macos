@@ -92,13 +92,18 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 ## Postinstall Checklist
 
 * Generate new ssh keys
-* Activate [alfred powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)
-* Set masterpassword username
-* Sign into firefox sync
 * Login to [keybase](keybase.io)
+* Alfred - [activate powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)
+* Masterpassword - set username
+* Firefox - login to sync
+* Dash - activate license
+* Dash - integrate with Alfred
+* Battle.Net - run installer
+
 * Add [webster's dictionary](http://jsomers.net/blog/dictionary)
 
 Install from the app store
+  * [Line](https://itunes.apple.com/us/app/line/id539883307?mt=12)
   * [Master Password](https://itunes.apple.com/us/app/master-password-nothing-to/id662763204?mt=12)
   * [Textual](https://itunes.apple.com/us/app/textual-irc-client/id403012667?mt=12)
     * Set textual to have command-[ switch across networks
