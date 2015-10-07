@@ -61,6 +61,7 @@ Neat things about this setup:
 , [Android File Transfer](android.com/filetransfer)
 , [Arduino](arduino.cc)
 , [Atom](atom.io)
+, [Battle.net](battle.net)
 , [Dash](kapeli.com/dash)
 , [Disk Inventory X](www.derlien.com)
 , [Dropbox](dropbox.com)
