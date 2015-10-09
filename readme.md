@@ -81,6 +81,7 @@ Neat things about this setup:
 , [Spotify](spotify.com)
 , [Steam](steampowered.com)
 , [Transmission](transmissionbt.com)
+, [Vagrant](vagrantup.com)
 , [Virtualbox](virtualbox.org)
 , [Vlc](vlc.org)
 , [Wireshark](wireshark.org)
