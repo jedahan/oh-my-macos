@@ -36,6 +36,7 @@ Neat things about this setup:
 , [fceux](www.fceux.com)
 , [git](git-scm.com)
 , [gnuradio](gnuradio.org)
+, [go](golang.org)
 , [horndis](joshuawise.com/horndis)
 , [hub](hub.github.com)
 , [jq](stedolan.github.io/jq)
