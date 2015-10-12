@@ -111,3 +111,6 @@ Install from the app store
     * Set textual to have command-[ switch across networks
   * [Twitter](https://itunes.apple.com/us/app/twitter/id409789998?mt=12)
   * [Vox](https://itunes.apple.com/us/app/vox/id461369673?mt=12)
+
+
+Maybe install n1 and sync-engine (via go)
