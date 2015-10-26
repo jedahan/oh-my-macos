@@ -87,6 +87,10 @@ Neat things about this setup:
 , [Wireshark](wireshark.org)
 , [XQuartz](xquartz.macosforge.org)
 
+### other stuff
+
+Installs the [inconsolata font](http://levien.com/type/myfonts/inconsolata.html)
+
 ### dotfiles
 
 Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
@@ -111,6 +115,3 @@ Install from the app store
     * Set textual to have command-[ switch across networks
   * [Twitter](https://itunes.apple.com/us/app/twitter/id409789998?mt=12)
   * [Vox](https://itunes.apple.com/us/app/vox/id461369673?mt=12)
-
-
-Maybe install n1 and sync-engine (via go)
