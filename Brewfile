@@ -13,7 +13,7 @@ cask 'java'
 brew 'neovim', args: ['HEAD']
 brew 'python3'
 cask 'slack'
-brew 'the_silver_searcher'
+brew 'sift'
 cask 'tuxera-ntfs'
 
 brew 'aircrack-ng'

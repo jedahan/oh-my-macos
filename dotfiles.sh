@@ -35,5 +35,6 @@ vboxmanage --version &>/dev/null && {
   popd
 }
 
+echo "configuring git name and email"
 git config --global user.name "Jonathan Dahan"
 git config --global user.email "jonathan@jonathan.is"
