@@ -2,6 +2,7 @@
 sudo softwareupdate --install --all
 
 brew -v && {
+  export HOMEBREW_CASK_OPTS="--binarydir=$OH_MY_OSX_HOMEBREW_PREFIX/bin"
   brew update
   brew upgrade
   brew install ruby

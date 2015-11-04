@@ -2,17 +2,12 @@
 
 Shell scripts for automated OSX machine setup.
 
-## Prerequisites
-
-* [XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) from the app store
-* [homebrew](https://brew.sh)
-* set brew cask binarydir == $HOME/.homebrew/bin
-
 ## Usage
 
 Edit any of the files in to your liking and then run `engage.sh` in your terminal
 
-`engage.sh` will ask for your root password, and then:
+`engage.sh` will ask for your root password, find or install the xcode commandline utilities, install homebrew to **$HOME/.brew**, and then:
+
 
   1. Apply system preferences (like hostname) (`preferences.sh`)
   2. Install commandline and gui software (specified in `Brewfile` and `Caskfile`)
