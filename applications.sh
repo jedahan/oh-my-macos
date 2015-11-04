@@ -26,5 +26,5 @@ keybase-installer
 
 # Install some more cli utilities
 export GEM_HOME="${HOME}/.gems"
-export GEM_PATH="${HOME}/.gems"
+export GEM_PATH="$GEM_HOME"
 gem install foreman homesick lolcat lolcommits
