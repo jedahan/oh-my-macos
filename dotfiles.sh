@@ -7,9 +7,6 @@ curl http://levien.com/type/myfonts/Inconsolata.otf -o ${HOME}/Library/Fonts/Inc
 echo "setting iterm2 preferences directory to ${HOME}/.iterm2"
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "${HOME}/.iterm2"
 
-echo "installing prezto for zsh"
-git clone --recursive https://github.com/sorin-ionescu/prezto.git $HOME/.zprezto
-
 echo "symlinking dotfiles to home directory"
 export PATH=$HOME/.gems/bin:$PATH
 homesick clone jedahan/dotfiles && homesick symlink dotfiles

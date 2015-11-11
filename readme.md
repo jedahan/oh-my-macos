@@ -15,7 +15,7 @@ Edit any of the files in to your liking and then run `engage.sh` in your termina
   4. Apply gui application preferences (`defaults.sh`)
 
 Neat things about this setup:
- - shell will be set to [zsh](zsh.org) with [prezto](github.com/sorin-ionescu/prezto)
+ - shell will be set to [zsh](zsh.org) with some plugins
  - *.dev will always resolve to 127.0.0.1 (thanks dnsmasq!)
 
 ## Software
