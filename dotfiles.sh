@@ -1,5 +1,5 @@
-echo "downloading winhelp hosts.txt to block malware"
-sudo curl 'winhelp2002.mvps.org/hosts.txt' -a -o /private/etc/hosts
+echo "downloading hosts to block malware"
+sudo curl 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts' -a -o /private/etc/hosts
 
 echo "installing inconsolata font"
 curl http://levien.com/type/myfonts/Inconsolata.otf -o ${HOME}/Library/Fonts/Inconsolata.otf
