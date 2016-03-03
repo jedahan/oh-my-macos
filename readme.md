@@ -26,6 +26,7 @@ Neat things about this setup:
 
 [aircrack-ng](aircrack-ng.org)
 , [android-sdk](developer.android.com/index.html)
+, [assh](assh.io)
 , [avr-libc](http://www.nongnu.org/avr-libc)
 , [avrdude](http://www.nongnu.org/avrdude)
 , [boot2docker](github.com/boot2docker/boot2docker-cli)

@@ -4,15 +4,18 @@ sudo curl 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts' -a 
 echo "installing inconsolata font"
 curl http://levien.com/type/myfonts/Inconsolata.otf -o ${HOME}/Library/Fonts/Inconsolata.otf
 
-echo "setting iterm2 preferences directory to ${HOME}/.iterm2"
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "${HOME}/.iterm2"
+echo "setting iterm2 preferences directory to ${HOME}/.iterm3"
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "${HOME}/.config/iterm3"
 
 echo "symlinking dotfiles to home directory"
-export PATH=$HOME/.gems/bin:$PATH
-homesick clone jedahan/dotfiles && homesick symlink dotfiles
+git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
+source $HOME/.homesick/repos/homeshick/homeshick.sh
+homeshick clone jedahan/dotfiles && homeshick link dotfiles
 
 echo "setting shell to zsh"
-chsh -s $HOME/.homebrew/bin/zsh
+zsh_bin=$(brew --prefix)/bin/zsh
+grep $zsh_bin /etc/shells || { echo $zsh_bin | sudo tee -a /etc/shells }
+chsh -s $zsh_bin
 
 dnsmasq --version &>/dev/null && {
   echo "making *.dev resolve to 127.0.0.1"

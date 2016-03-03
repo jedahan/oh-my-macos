@@ -24,10 +24,7 @@ sudo easy_install httpie
 sudo npm install --global keybase-installer
 keybase-installer
 
-# Install vantage, node.js debugger and repl
-npm install --global vantage
-
 # Install some more cli utilities
 export GEM_HOME="${HOME}/.gems"
 export GEM_PATH="$GEM_HOME"
-gem install foreman homesick lolcat lolcommits
+gem install lolcat lolcommits
