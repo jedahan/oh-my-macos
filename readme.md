@@ -11,7 +11,7 @@ Shell scripts for automated OSX machine setup.
 
 Edit [preferences.sh](/preferences.sh), [defaults.sh](/defaults.sh), and the [Brewfile](/Brewfile) to your liking, then run `engage.sh` in your terminal.
 
-`engage.sh` will ask for your root password, install the xcode commandline utilities, install homebrew (to **$HOME/.brew**), and then:
+`engage.sh` asks for your root password, installs the xcode commandline utilities, installs homebrew to **$HOME/.brew**, and then:
 
   1. Apply system preferences (like hostname) from `preferences.sh`
   2. Install commandline and gui software specified in the `Brewfile`
