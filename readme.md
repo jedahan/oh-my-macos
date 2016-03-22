@@ -13,10 +13,10 @@ Edit [preferences.sh](/preferences.sh), [defaults.sh](/defaults.sh), and the [Br
 
 `engage.sh` asks for your root password, installs the xcode commandline utilities, installs homebrew to **$HOME/.brew**, and then:
 
-  1. Apply system preferences (like hostname) from `preferences.sh`
-  2. Install commandline and gui software specified in the `Brewfile`
-  3. Install application extensions, add-ons, and plug-ins with `dotfiles.sh`
-  4. Apply gui application preferences in `defaults.sh`
+  1. Applies system preferences (like hostname) from `preferences.sh`
+  2. Installs commandline and gui software specified in the `Brewfile`
+  3. Installs application extensions, add-ons, and plug-ins with `dotfiles.sh`
+  4. Applies gui application preferences in `defaults.sh`
 
 ## Software
 
