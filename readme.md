@@ -10,13 +10,14 @@ Edit any of the files in to your liking and then run `engage.sh` in your termina
 
 
   1. Apply system preferences (like hostname) (`preferences.sh`)
-  2. Install commandline and gui software (specified in `Brewfile` and `Caskfile`)
+  2. Install commandline and gui software (specified in `Brewfile`)
   3. Install application extensions, add-ons, and plug-ins (`dotfiles.sh`)
   4. Apply gui application preferences (`defaults.sh`)
 
 Neat things about this setup:
  - shell will be set to [zsh](zsh.org) with some plugins
  - *.dev will always resolve to 127.0.0.1 (thanks dnsmasq!)
+ - adds the [inconsolata font](http://levien.com/type/myfonts/inconsolata.html)
 
 ## Software
 
@@ -85,10 +86,6 @@ Neat things about this setup:
 , [Wireshark](wireshark.org)
 , [XQuartz](xquartz.macosforge.org)
 
-### other stuff
-
-Installs the [inconsolata font](http://levien.com/type/myfonts/inconsolata.html)
-
 ### dotfiles
 
 Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
@@ -106,7 +103,7 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 
 * Add [webster's dictionary](http://jsomers.net/blog/dictionary)
 
-Install from the app store
+### Install from the app store
   * [Line](https://itunes.apple.com/us/app/line/id539883307?mt=12)
   * [Master Password](https://itunes.apple.com/us/app/master-password-nothing-to/id662763204?mt=12)
   * [Textual](https://itunes.apple.com/us/app/textual-irc-client/id403012667?mt=12)
