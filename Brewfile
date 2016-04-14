@@ -6,6 +6,7 @@ tap 'caskroom/fonts'
 tap 'osx-cross/avr'
 tap 'caskroom/versions'
 
+brew 'zsh'
 brew 'caskroom/cask/brew-cask'
 cask 'firefox'
 brew 'git'
