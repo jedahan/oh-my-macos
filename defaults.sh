@@ -7,7 +7,8 @@ defaults write com.runningwithcrayons.Alfred-Preferences syncfolder -string "~/.
   "INSERT INTO access VALUES('kTCCServiceAccessibility','com.irradiatedsoftware.Cinch',0,1,1,NULL);"
 
 # iTerm3
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/jedahan/.iterm3"
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/jedahan/config/.iterm3"
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 
 # Master Password
 defaults write com.lyndir.lhunath.MasterPassword.Mac hidePasswords -bool true
