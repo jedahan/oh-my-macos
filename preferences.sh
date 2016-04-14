@@ -49,4 +49,4 @@ defaults write com.apple.finder NewWindowTargetPath -string "file:///Volumes/dat
 
 # Kill affected applications
 for app in Finder Dock SystemUIServer cfprefsd; do killall "$app" > /dev/null 2>&1; done
-echo "Done. We should figure out if any of these changes need a restart to work."
+echo "Done. Dark interface, tap to click, and scroll to zoom require a restart"
