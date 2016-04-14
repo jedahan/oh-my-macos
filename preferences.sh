@@ -45,12 +45,8 @@ defaults write com.apple.menuextra.clock DateFormat -string "h:mm "
 # Finder: Open /Volumes/Data folder by default
 defaults write com.apple.finder NewWindowTargetPath -string "file:///Volumes/data/"
 
-## iTerm2
-iterm2=$(mdfind kMDItemFSName = "iTerm.app")
-[[ -n $iterm2 ]] && defaults write ${iterm2}/Contents/Info LSUIElement true
-
 ## Cleanup
 
 # Kill affected applications
 for app in Finder Dock SystemUIServer cfprefsd; do killall "$app" > /dev/null 2>&1; done
-echo "Done. Note that some of these changes require a logout/restart to take effect."
+echo "Done. We should figure out if any of these changes need a restart to work."
