@@ -4,11 +4,12 @@ tap 'homebrew/games'
 tap 'neovim/neovim'
 tap 'caskroom/fonts'
 tap 'osx-cross/avr'
+tap 'caskroom/versions'
 
 brew 'caskroom/cask/brew-cask'
 cask 'firefox'
 brew 'git'
-cask 'iterm2'
+cask 'iterm2-beta'
 cask 'font-inconsolata'
 cask 'java'
 brew 'neovim', args: ['HEAD']
