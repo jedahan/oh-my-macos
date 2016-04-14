@@ -1,7 +1,5 @@
 echo "hi"
 
-export OH_MY_OSX_HOMEBREW_PREFIX=$HOME/.brew
-
 echo "root permissions are required for a few commands, asking upfront"
 sudo -v
 # Keep-alive: update existing `sudo` time stamp until this script has finished
@@ -17,8 +15,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 }
 
 brew -v > /dev/null 2>&1 || {
-  echo "Installing brew to $OH_MY_OSX_HOMEBREW_PREFIX"
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install | sed -e s:/usr/local|$OH_MY_OSX_HOMEBREW_PREFIX:)"
+  echo "Installing homebrew"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
 ./preferences.sh
