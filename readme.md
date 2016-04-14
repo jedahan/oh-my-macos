@@ -7,6 +7,10 @@ Shell scripts for automated OSX machine setup.
 - *.dev will always resolve to 127.0.0.1 (thanks dnsmasq!)
 - sets up [my dotfiles](https://github.com/jedahan/dotfiles) which are neovim oriented
 
+## Known Issues
+- Had to `sudo xcodebuild -license` for gems with native extensions to build, tuxera-ntfs.
+- Neovim failed with https://github.com/neovim/homebrew-neovim/issues/143
+
 ## Usage
 
 Edit [preferences.sh](/preferences.sh), [defaults.sh](/defaults.sh), and the [Brewfile](/Brewfile) to your liking, then run `engage.sh` in your terminal.
