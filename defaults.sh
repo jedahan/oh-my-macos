@@ -1,8 +1,13 @@
 # Alfred
 defaults write com.runningwithcrayons.Alfred-Preferences syncfolder -string "~/.homesick/repos/dotfiles/home/.alfred"
 
-# iTerm2
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/jedahan/.iterm2"
+# Cinch postinstall requires accessibility
+[ -x /Applications/Cinch.app ] && \
+  sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db \
+  "INSERT INTO access VALUES('kTCCServiceAccessibility','com.irradiatedsoftware.Cinch',0,1,1,NULL);"
+
+# iTerm3
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/jedahan/.iterm3"
 
 # Master Password
 defaults write com.lyndir.lhunath.MasterPassword.Mac hidePasswords -bool true

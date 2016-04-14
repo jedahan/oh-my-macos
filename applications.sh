@@ -11,11 +11,6 @@ brew -v && {
   qlmanage -r
 }
 
-# Cinch postinstall requires accessibility
-[ -x /Applications/Cinch.app ] && \
-  sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db \
-  "INSERT INTO access VALUES('kTCCServiceAccessibility','com.irradiatedsoftware.Cinch',0,1,1,NULL);"
-
 # Install commandline applications
 sudo easy_install httpie
 
