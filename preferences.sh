@@ -15,7 +15,7 @@ name="talon"
 ## Input Devices
 
 # Enable tap to click
-defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
+defaults write com.apple.AppleBluetoothMultitouch.trackpad Clicking -int 1
 
 ## User Interface
 
