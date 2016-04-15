@@ -7,7 +7,7 @@ tap 'osx-cross/avr'
 tap 'caskroom/versions'
 
 brew 'zsh'
-brew 'caskroom/cask/brew-cask'
+cask 'gpgtools'
 cask 'firefox'
 brew 'git'
 cask 'iterm2-beta'
