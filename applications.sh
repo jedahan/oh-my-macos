@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # Update software
 sudo softwareupdate --install --all
 
@@ -6,32 +8,31 @@ brew -v && {
   brew upgrade
   brew install ruby
 
-  brew tap caskroom/cask
-  brew tap homebrew/games
-  brew tap neovim/neovim
-  brew tap caskroom/fonts
-  brew tap osx-cross/avr
-  brew tap caskroom/versions
+  taps=(
+    caskroom/cask
+    homebrew/games
+    neovim/neovim
+    caskroom/fonts
+    osx-cross/avr
+    caskroom/versions
+  )
 
-  function brewinstall() {
-    brew list $1 >/dev/null || brew install $_
-  }
+  important_clis=(
+    git
+    zsh
+    python3
+    sift
+  )
 
-  function caskinstall() {
-    brew cask list $1 >/dev/null || brew cask install $_
-  }
+  important_apps=(
+    gpgtools
+    firefox
+    iterm2-beta
+    tuxera-ntfs
+    font-inconsolata
+  )
 
-  brew list neovim >/dev/null || brew install --HEAD neovim
-
-  for important_cli in (git zsh python3 sift); do
-    brewinstall $important_cli
-  done
-
-  for important_app in (gpgtools firefox iterm2-beta font-inconsolata java slack tuxera-ntfs); do
-    caskinstall $important_app
-  done
-
-  for cli in (
+  clis=(
     aircrack-ng
     android-sdk
     avr-libc
@@ -52,11 +53,9 @@ brew -v && {
     vice
     watch
     youtube-dl
-  ); do
-    brewinstall $cli
-  done
+  )
 
-  for app in (
+  apps=(
     alfred
     android-file-transfer
     arduino
@@ -71,6 +70,7 @@ brew -v && {
     gitify
     hex-fiend
     horndis
+    java
     mini-vmac
     spotify
     steam
@@ -85,11 +85,24 @@ brew -v && {
     qlstephen
     quicklook-csv
     quicklook-json
+    slack
     suspicious-package
     zulip
-  ); do
-    caskinstall $app
-  done
+  )
+
+  function brewinstall() {
+    brew list $1 >/dev/null || brew install $_
+  }
+
+  function caskinstall() {
+    brew cask list $1 >/dev/null || brew cask install $_
+  }
+
+  brew list neovim >/dev/null || brew install --HEAD neovim
+  for cli in $important_clis; do brewinstall $cli; done
+  for app in $important_apps; do brewinstall $app; done
+  for cli in $clis; do brewinstall $cli; done
+  for app in $apps; do caskinstall $app; done
 
   brew cleanup
   qlmanage -r
