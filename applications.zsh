@@ -35,21 +35,23 @@ brew -v && {
   clis=(
     aircrack-ng
     android-sdk
+    assh
     avr-libc
     avrdude
-    assh
-    boot2docker
     fceux
     gnuradio
     go
     hub
-    mtr
+    jq
     mpv
+    mtr
+    netcat6
     ngrep
     nmap
     node
     ruby
     trash
+    tcpdump
     vice
     watch
     youtube-dl
@@ -64,7 +66,6 @@ brew -v && {
     battle-net
     betterzipql
     dash
-    dropbox
     flickr-uploadr
     fritzing
     gitify
@@ -72,6 +73,7 @@ brew -v && {
     horndis
     java
     mini-vmac
+    slack
     soundnode
     spotify
     steam
@@ -79,16 +81,16 @@ brew -v && {
     vagrant
     virtualbox
     vlc
+    wireshark
     xquartz
+    zulip
     qlcolorcode
     qlmarkdown
     qlprettypatch
     qlstephen
     quicklook-csv
     quicklook-json
-    slack
     suspicious-package
-    zulip
   )
 
   function brewinstall() {
@@ -113,10 +115,6 @@ $+commands[http] || sudo easy_install httpie
 
 # Install livestreamer
 pip3 install livestreamer
-
-# Install keybase
-sudo npm install --global keybase-installer
-keybase-installer
 
 # Install emoji-cli
 sudo npm install --global emoji-cli

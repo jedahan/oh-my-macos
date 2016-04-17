@@ -33,7 +33,6 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [assh](assh.io)
 , [avr-libc](http://www.nongnu.org/avr-libc)
 , [avrdude](http://www.nongnu.org/avrdude)
-, [boot2docker](github.com/boot2docker/boot2docker-cli)
 , [dnsmasq](thekelleys.org.uk/dnsmasq/doc.html)
 , [fceux](www.fceux.com)
 , [git](git-scm.com)
@@ -42,7 +41,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [horndis](joshuawise.com/horndis)
 , [hub](hub.github.com)
 , [jq](stedolan.github.io/jq)
-, [keybase](keybase.io)
+, [mpv](mpv.io)
 , [mtr](www.bitwizard.nl/mtr)
 , [netcat6](deepspace6.net/projects/netcat6.html)
 , [neovim](neovim.io)
@@ -50,11 +49,12 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [nmap](nmap.org)
 , [nodejs](nodejs.org)
 , [python](python.org)
+, [ruby](ruby-lang.org)
 , [sift](sift-tool.org)
 , [tcpdump](tcpdump.org)
 , [trash](hasseg.org/trash)
-, [watch](procps.sourceforge.net)
 , [vice](vice-emu.sourceforge.net)
+, [watch](procps.sourceforge.net)
 , [youtube-dl](rg3.github.io/youtube-dl)
 , [zsh](zsh.org)
 
@@ -65,10 +65,9 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Android File Transfer](android.com/filetransfer)
 , [Arduino](arduino.cc)
 , [Atom](atom.io)
+, [Backblaze](backblaze.com)
 , [Battle.net](battle.net)
 , [Dash](kapeli.com/dash)
-, [Disk Inventory X](www.derlien.com)
-, [Dropbox](dropbox.com)
 , [Firefox](mozilla.org)
 , [Filckr Uploadr](www.flickr.com/tools)
 , [Fritzing](fritzing.org)
@@ -78,7 +77,6 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [iTerm2](iterm2.com)
 , [Java](www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 , [mini vMac](www.gryphel.com/c/minivmac)
-, [mpv](mpv.io)
 , [Slack](slack.com)
 , [Spotify](spotify.com)
 , [Steam](steampowered.com)
@@ -92,7 +90,6 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 ## Postinstall Checklist
 
 - [ ] Generate new ssh keys
-- [ ] Login to [keybase](keybase.io)
 - [ ] Alfred - [activate powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)
 - [ ] Masterpassword - set username
 - [ ] Firefox - login to sync
