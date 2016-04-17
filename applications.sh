@@ -110,6 +110,9 @@ brew -v && {
 
 $+commands[http] || sudo easy_install httpie
 
+# Install livestreamer
+pip3 install livestreamer
+
 # Install keybase
 sudo npm install --global keybase-installer
 keybase-installer
