@@ -72,6 +72,7 @@ brew -v && {
     horndis
     java
     mini-vmac
+    soundnode
     spotify
     steam
     transmission
