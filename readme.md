@@ -13,18 +13,18 @@ Shell scripts for automated OSX machine setup.
 
 ## Usage
 
-Edit [preferences.sh](/preferences.sh), [defaults.sh](/defaults.sh), and the [Brewfile](/Brewfile) to your liking, then run `engage.sh` in your terminal.
+Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), and [defaults.sh](/defaults.sh) to your liking, then run `engage.sh` in your terminal.
 
-`engage.sh` asks for your root password, installs the xcode commandline utilities, installs homebrew to **$HOME/.brew**, and:
+`engage.sh` asks for your root password, installs the xcode commandline utilities, installs homebrew and:
 
   1. Applies system preferences (like hostname) from `preferences.sh`
-  2. Installs commandline and gui software specified in the `Brewfile`
+  2. Installs commandline and gui software specified in `applications.zsh`
   3. Installs application extensions, add-ons, and plug-ins with `dotfiles.sh`
   4. Applies gui application preferences in `defaults.sh`
 
 ## Software
 
-`applications.sh` installs the following software, mostly through [Homebrew](http://brew.sh) and [Homebrew Cask](https://github.com/phinze/homebrew-cask):
+`applications.zsh` installs the following software, mostly through [Homebrew](http://brew.sh) and [Homebrew Cask](https://github.com/phinze/homebrew-cask):
 
 ### commandline software
 
