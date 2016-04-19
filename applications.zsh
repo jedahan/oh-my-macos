@@ -80,6 +80,7 @@ brew -v && {
     transmission
     vagrant
     virtualbox
+    virtualbox-extension-pack
     vlc
     wireshark
     xquartz
