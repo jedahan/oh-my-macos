@@ -81,6 +81,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Spotify](spotify.com)
 , [Steam](steampowered.com)
 , [Transmission](transmissionbt.com)
+, [Textual](codeux.com/textual)
 , [Vagrant](vagrantup.com)
 , [Virtualbox](virtualbox.org)
 , [Vlc](vlc.org)
@@ -90,6 +91,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 ## Postinstall Checklist
 
 - [ ] Generate new ssh keys
+- [ ] Set textual to have command-[ switch across networks
 - [ ] Alfred - [activate powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)
 - [ ] Masterpassword - set username
 - [ ] Firefox - login to sync
@@ -99,10 +101,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 
 - [ ] Add [webster's dictionary](http://jsomers.net/blog/dictionary)
 
-
 - [ ] App Store - [Line](https://itunes.apple.com/us/app/line/id539883307?mt=12)
 - [ ] App Store - [Master Password](https://itunes.apple.com/us/app/master-password-nothing-to/id662763204?mt=12)
-- [ ] App Store - [Textual](https://itunes.apple.com/us/app/textual-irc-client/id403012667?mt=12)
-    - [ ] Set textual to have command-[ switch across networks
 - [ ] App Store - [Twitter](https://itunes.apple.com/us/app/twitter/id409789998?mt=12)
 - [ ] App Store - [Vox](https://itunes.apple.com/us/app/vox/id461369673?mt=12)
