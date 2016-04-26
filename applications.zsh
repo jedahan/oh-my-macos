@@ -15,6 +15,7 @@ brew -v && {
     caskroom/fonts
     osx-cross/avr
     caskroom/versions
+    homebrew/command-not-found
   )
 
   important_clis=(
