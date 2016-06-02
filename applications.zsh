@@ -9,13 +9,12 @@ brew -v && {
   brew install ruby
 
   taps=(
-    caskroom/cask
-    homebrew/games
     neovim/neovim
-    caskroom/fonts
-    osx-cross/avr
-    caskroom/versions
+    homebrew/homebrew-games
     homebrew/command-not-found
+    caskroom/homebrew-fonts
+    caskroom/homebrew-versions
+    osx-cross/avr
   )
 
   important_clis=(
