@@ -30,6 +30,7 @@ brew -v && {
     iterm2-beta
     tuxera-ntfs
     font-inconsolata
+    font-mononoki
     textual
   )
 
