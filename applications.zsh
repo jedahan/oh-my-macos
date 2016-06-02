@@ -11,7 +11,6 @@ brew -v && {
   taps=(
     neovim/neovim
     homebrew/homebrew-games
-    homebrew/command-not-found
     caskroom/homebrew-fonts
     caskroom/homebrew-versions
     osx-cross/avr
