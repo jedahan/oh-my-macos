@@ -73,6 +73,7 @@ brew -v && {
     hex-fiend
     horndis
     java
+    lumen
     mini-vmac
     slack
     soundnode
