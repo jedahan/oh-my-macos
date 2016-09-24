@@ -1,9 +1,9 @@
-# jedahan's El Capitan setup
+# jedahan's macOS Sierra setup
 
-Shell scripts for automated OSX machine setup.
+Shell scripts for automated macOS machine setup.
 
-- shell will be set to [zsh](zsh.org) with some plugins like autocomplete, and fzy
-- sets the tomorrow night eightes theme and adds the [inconsolata font](http://levien.com/type/myfonts/inconsolata.html)
+- shell will be set to [zsh](zsh.org) with some plugins like autocomplete, and a fuzzy finder
+- sets the color scheme to tomorrow night eightes with the [inconsolata font](http://levien.com/type/myfonts/inconsolata.html)
 - *.dev will always resolve to 127.0.0.1 (thanks dnsmasq!)
 - sets up [my dotfiles](https://github.com/jedahan/dotfiles) which are neovim oriented
 
@@ -46,7 +46,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [nodejs](nodejs.org)
 , [python](python.org)
 , [ruby](ruby-lang.org)
-, [sift](sift-tool.org)
+, [ripgrep](github.com/BurntSushi/ripgrep)
 , [tcpdump](tcpdump.org)
 , [trash](hasseg.org/trash)
 , [vice](vice-emu.sourceforge.net)
