@@ -20,13 +20,14 @@ brew -v && {
     git
     zsh
     python3
-    sift
+    fzy
+    https://raw.githubusercontent.com/BurntSushi/ripgrep/master/pkg/brew/ripgrep.rb
   )
 
   important_apps=(
     gpgtools
     firefox
-    iterm2-beta
+    iterm2
     tuxera-ntfs
     font-inconsolata
     font-mononoki
