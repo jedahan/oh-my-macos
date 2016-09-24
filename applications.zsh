@@ -115,6 +115,19 @@ brew -v && {
   qlmanage -r
 }
 
+mas -v >/dev/null && {
+  apps=(
+    412529613 # Cinch
+    896450579 # Textual
+    662763204 # Master Password
+    847496013 # Deckset
+    425424353 # The Unarchiver
+    409789998 # Twitter
+  )
+
+  for app in $apps; do mas install $app; done
+}
+
 $+commands[http] || sudo easy_install httpie
 
 # Install livestreamer

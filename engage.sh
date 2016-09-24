@@ -19,6 +19,17 @@ brew -v > /dev/null 2>&1 || {
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
+mas -v > /dev/null 2>&1 || {
+  echo "Installing mas"
+  brew install mas
+  echo "Login to the App Store (credentials are NOT stored)"
+  read -p "Apple ID: " apple_id
+  read -p "Password: " password -s
+  mas signin $apple_id $password
+  unset apple_id
+  unset password
+}
+
 ./preferences.sh
 ./applications.sh
 ./dotfiles.sh

@@ -7,15 +7,11 @@ Shell scripts for automated OSX machine setup.
 - *.dev will always resolve to 127.0.0.1 (thanks dnsmasq!)
 - sets up [my dotfiles](https://github.com/jedahan/dotfiles) which are neovim oriented
 
-## Known Issues
-- Had to `sudo xcodebuild -license` for gems with native extensions to build, tuxera-ntfs.
-- Neovim failed with https://github.com/neovim/homebrew-neovim/issues/143
-
 ## Usage
 
 Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), and [defaults.sh](/defaults.sh) to your liking, then run `engage.sh` in your terminal.
 
-`engage.sh` asks for your root password, installs the xcode commandline utilities, installs homebrew and:
+`engage.sh` asks for your root password, installs the xcode commandline utilities, installs homebrew, asks for your app store username and password, and:
 
   1. Applies system preferences (like hostname) from `preferences.sh`
   2. Installs commandline and gui software specified in `applications.zsh`
@@ -24,7 +20,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 
 ## Software
 
-`applications.zsh` installs the following software, mostly through [Homebrew](http://brew.sh) and [Homebrew Cask](https://github.com/phinze/homebrew-cask):
+`applications.zsh` installs the following software, mostly through [Homebrew](http://brew.sh) and [mas]() (from the App Store):
 
 ### commandline software
 
@@ -67,7 +63,9 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Atom](atom.io)
 , [Backblaze](backblaze.com)
 , [Battle.net](battle.net)
+, [Cinch](irradiatedsoftware.com/cinch/)
 , [Dash](kapeli.com/dash)
+, [Deckset](google.com/?g=deckset)
 , [Firefox](mozilla.org)
 , [Filckr Uploadr](www.flickr.com/tools)
 , [Fritzing](fritzing.org)
@@ -76,12 +74,16 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Horndis](joshuawise.com/horndis)
 , [iTerm2](iterm2.com)
 , [Java](www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+, [Master Password](masterpasswordapp.com)
 , [mini vMac](www.gryphel.com/c/minivmac)
 , [Slack](slack.com)
 , [Spotify](spotify.com)
 , [Steam](steampowered.com)
+, [Textual](codeux.com/textual)
+, [The Unarchiver]()
 , [Transmission](transmissionbt.com)
 , [Textual](codeux.com/textual)
+, [Twitter](twitter.com)
 , [Vagrant](vagrantup.com)
 , [Virtualbox](virtualbox.org)
 , [Vlc](vlc.org)
@@ -98,10 +100,6 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 - [ ] Dash - activate license
 - [ ] Dash - integrate with Alfred
 - [ ] Battle.Net - run installer
+- [ ] Set textual to have command-[ switch across networks
 
 - [ ] Add [webster's dictionary](http://jsomers.net/blog/dictionary)
-
-- [ ] App Store - [Line](https://itunes.apple.com/us/app/line/id539883307?mt=12)
-- [ ] App Store - [Master Password](https://itunes.apple.com/us/app/master-password-nothing-to/id662763204?mt=12)
-- [ ] App Store - [Twitter](https://itunes.apple.com/us/app/twitter/id409789998?mt=12)
-- [ ] App Store - [Vox](https://itunes.apple.com/us/app/vox/id461369673?mt=12)
