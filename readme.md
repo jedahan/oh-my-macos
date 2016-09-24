@@ -2,7 +2,7 @@
 
 Shell scripts for automated OSX machine setup.
 
-- shell will be set to [zsh](zsh.org) with some plugins like autocomplete, and fzf
+- shell will be set to [zsh](zsh.org) with some plugins like autocomplete, and fzy
 - sets the tomorrow night eightes theme and adds the [inconsolata font](http://levien.com/type/myfonts/inconsolata.html)
 - *.dev will always resolve to 127.0.0.1 (thanks dnsmasq!)
 - sets up [my dotfiles](https://github.com/jedahan/dotfiles) which are neovim oriented
