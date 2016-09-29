@@ -1,8 +1,13 @@
 echo "downloading hosts to block malware"
 sudo curl 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts' -a -o /private/etc/hosts
 
-echo "installing inconsolata font"
-curl http://levien.com/type/myfonts/Inconsolata.otf -o ${HOME}/Library/Fonts/Inconsolata.otf
+nerd_font_prefix=https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/
+pushd ${HOME}/Library/Fonts
+echo "installing inconsolata nerd font"
+curl -O -L $nerd_font_prefix/Inconsolata/complete/Inconsolata%20for%20Powerline%20Nerd%20Font%20Complete.otf
+echo "installing monofur nerd font"
+curl -O -L $nerd_font_prefix/Monofur/Regular/complete/monofur%20for%20Powerline%20Nerd%20Font%20Complete.ttf
+popd
 
 echo "setting iterm2 preferences directory to ${HOME}/.iterm3"
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "${HOME}/.config/iterm3"
