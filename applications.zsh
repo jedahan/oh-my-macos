@@ -21,6 +21,7 @@ brew -v && {
     zsh
     python3
     ripgrep
+    exa
     tmux
     neovim
     libgit2 # for exa
