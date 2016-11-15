@@ -20,8 +20,8 @@ brew -v && {
     git
     zsh
     python3
-    fzy
-    https://raw.githubusercontent.com/BurntSushi/ripgrep/master/pkg/brew/ripgrep.rb
+    ripgrep
+    tmux
   )
 
   important_apps=(
