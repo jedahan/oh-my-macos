@@ -93,6 +93,7 @@ brew -v && {
     qlmarkdown
     qlprettypatch
     qlstephen
+    qlvideo
     quicklook-csv
     quicklook-json
     suspicious-package
