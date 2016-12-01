@@ -22,6 +22,7 @@ brew -v && {
     python3
     ripgrep
     tmux
+    neovim
   )
 
   important_apps=(
@@ -105,7 +106,6 @@ brew -v && {
     brew cask list $1 >/dev/null || brew cask install $_
   }
 
-  brew list neovim >/dev/null || brew install --HEAD neovim
   for cli in $important_clis; do brewinstall $cli; done
   for app in $important_apps; do brewinstall $app; done
   for cli in $clis; do brewinstall $cli; done
@@ -128,15 +128,9 @@ mas -v >/dev/null && {
   for app in $apps; do mas install $app; done
 }
 
-$+commands[http] || sudo easy_install httpie
+$+commands[http] || pip3 install httpie
+$+commands[livestreamer] || pip3 install livestreamer
 
-# Install livestreamer
-pip3 install livestreamer
-
-# Install emoji-cli
-sudo npm install --global emoji-cli
-
-# Install some more cli utilities
 export GEM_HOME="${HOME}/.gems"
 export GEM_PATH="$GEM_HOME"
 gem install lolcat lolcommits
