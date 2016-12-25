@@ -30,6 +30,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [avr-libc](http://www.nongnu.org/avr-libc)
 , [avrdude](http://www.nongnu.org/avrdude)
 , [dnsmasq](thekelleys.org.uk/dnsmasq/doc.html)
+, [exa](the.exa.website)
 , [fceux](www.fceux.com)
 , [fzf](github.com/junegunn/fzf)
 , [git](git-scm.com)

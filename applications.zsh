@@ -26,6 +26,7 @@ brew -v && {
   )
 
   important_apps=(
+    exa
     gpgtools
     firefox
     iterm2
