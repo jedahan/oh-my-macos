@@ -26,7 +26,6 @@ brew -v && {
   )
 
   important_apps=(
-    exa
     gpgtools
     firefox
     iterm2
@@ -34,6 +33,12 @@ brew -v && {
     font-inconsolata
     font-mononoki
     textual
+  )
+
+  crates=(
+    ripgrep
+    tealdeer
+    https://github.com/ogham/exa
   )
 
   clis=(
@@ -108,8 +113,14 @@ brew -v && {
     brew cask list $1 >/dev/null || brew cask install $_
   }
 
+  function crateinstall() {
+    [[ $1 =~ ^http ]] && git="--git" || git=""
+    cargo install $git $1
+  }
+
   for cli in $important_clis; do brewinstall $cli; done
   for app in $important_apps; do brewinstall $app; done
+  for create in $crates; do crateinstall $crate; done
   for cli in $clis; do brewinstall $cli; done
   for app in $apps; do caskinstall $app; done
 
