@@ -19,6 +19,11 @@ brew -v > /dev/null 2>&1 || {
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
+cargo -v > /dev/null 2>&1 || {
+  echo "Installing rustup & rust"
+  curl https://sh.rustup.rs -sSf | sh
+}
+
 mas -v > /dev/null 2>&1 || {
   echo "Installing mas"
   brew install mas
