@@ -23,6 +23,7 @@ brew -v && {
     ripgrep
     tmux
     neovim
+    libgit2 # for exa
   )
 
   important_apps=(
