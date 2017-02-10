@@ -20,7 +20,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 
 ## Software
 
-`applications.zsh` installs the following software, mostly through [Homebrew](http://brew.sh) and [mas]() (from the App Store):
+`applications.zsh` installs the following software, mostly through [Homebrew](http://brew.sh) and [mas](https://github.com/mas-cli/mas) (from the App Store):
 
 ### commandline software
 
@@ -39,6 +39,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [horndis](joshuawise.com/horndis)
 , [hub](hub.github.com)
 , [jq](stedolan.github.io/jq)
+, [lolcat](github.com/ur0/lolcat)
 , [mpv](mpv.io)
 , [mtr](www.bitwizard.nl/mtr)
 , [netcat6](deepspace6.net/projects/netcat6.html)
@@ -55,6 +56,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [trash](hasseg.org/trash)
 , [vice](vice-emu.sourceforge.net)
 , [watch](procps.sourceforge.net)
+, [xsv](github.com/BurntSushi/xsv)
 , [youtube-dl](rg3.github.io/youtube-dl)
 , [zsh](zsh.org)
 

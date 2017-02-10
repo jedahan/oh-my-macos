@@ -38,9 +38,11 @@ brew -v && {
   )
 
   crates=(
+    https://github.com/ogham/exa
+    cargo-update
+    lolcat
     ripgrep
     tealdeer
-    https://github.com/ogham/exa
   )
 
   clis=(
@@ -148,4 +150,4 @@ $+commands[livestreamer] || pip3 install livestreamer
 
 export GEM_HOME="${HOME}/.gems"
 export GEM_PATH="$GEM_HOME"
-gem install lolcat lolcommits
+gem install lolcommits
