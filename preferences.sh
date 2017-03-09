@@ -17,6 +17,12 @@ name="talon"
 # Enable tap to click
 defaults write com.apple.AppleBluetoothMultitouch.trackpad Clicking -int 1
 
+# Disable "press and hold" (enables key repeat)
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Set key repeat to fast
+defaults write -g KeyRepeat -int 0.02
+
 ## User Interface
 
 # Dark Interface
