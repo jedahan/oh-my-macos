@@ -39,7 +39,3 @@ vboxmanage --version &>/dev/null && {
   vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-${virtualbox_version}.vbox-extpack
   popd
 }
-
-echo "configuring git name and email"
-git config --global user.name "Jonathan Dahan"
-git config --global user.email "jonathan@jonathan.is"
