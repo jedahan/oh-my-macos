@@ -58,6 +58,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [watch](procps.sourceforge.net)
 , [xsv](github.com/BurntSushi/xsv)
 , [youtube-dl](rg3.github.io/youtube-dl)
+, [zpm](github.com/zpm-project/zpm-zsh)
 , [zsh](zsh.org)
 
 ### gui software

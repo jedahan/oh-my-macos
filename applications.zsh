@@ -21,10 +21,11 @@ brew -v && {
     zsh
     python3
     ripgrep
+    libgit2 # for exa
     exa
     tmux
     neovim
-    libgit2 # for exa
+    zpm
   )
 
   important_apps=(
