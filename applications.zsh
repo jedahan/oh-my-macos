@@ -8,38 +8,28 @@ brew -v && {
   brew upgrade
   brew install ruby
 
-  taps=(
-    neovim/neovim
-    homebrew/homebrew-games
-    caskroom/homebrew-fonts
-    caskroom/homebrew-versions
-    osx-cross/avr
-  )
-
   important_clis=(
     git
     zsh
     python3
     ripgrep
-    libgit2 # for exa
     exa
     tmux
     neovim
     zpm
+    neovim/neovim/neovim
   )
 
   important_apps=(
+    master-password
     gpgtools
     firefox
     iterm2
-    tuxera-ntfs
-    font-inconsolata
-    font-mononoki
     textual
+    inconsolata-nerd-font
   )
 
   crates=(
-    https://github.com/ogham/exa
     cargo-update
     lolcat
     ripgrep
@@ -48,14 +38,8 @@ brew -v && {
 
   clis=(
     aircrack-ng
-    android-sdk
-    assh
-    avr-libc
     avrdude
-    fceux
-    gnuradio
     go
-    hub
     jq
     mpv
     mtr
@@ -66,9 +50,10 @@ brew -v && {
     ruby
     trash
     tcpdump
-    vice
     watch
     youtube-dl
+    osx-cross/homebrew-avr/avr-libc
+    osx-cross/homebrew-avr/avr-gcc
   )
 
   apps=(
@@ -80,9 +65,6 @@ brew -v && {
     battle-net
     betterzipql
     dash
-    flickr-uploadr
-    fritzing
-    gitify
     hex-fiend
     horndis
     java
@@ -93,10 +75,8 @@ brew -v && {
     spotify
     steam
     transmission
-    vagrant
     virtualbox
     virtualbox-extension-pack
-    vlc
     wireshark
     xquartz
     zulip
