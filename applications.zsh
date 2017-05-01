@@ -1,9 +1,11 @@
 #!/bin/zsh
+set -e
 
-# Update software
+echo "Updating macOS software"
 sudo softwareupdate --install --all
 
 brew -v && {
+  echo "updating homebrew"
   brew update
   brew upgrade
   brew install ruby
