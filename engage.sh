@@ -32,7 +32,8 @@ mas -v > /dev/null 2>&1 || {
   }
 }
 
-./preferences.sh
-./applications.zsh
-./dotfiles.sh
-./defaults.sh
+bash preferences.sh
+zsh applications.zsh
+bash dotfiles.sh
+bash defaults.sh
+bash security.sh

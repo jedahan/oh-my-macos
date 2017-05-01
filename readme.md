@@ -3,9 +3,10 @@
 Shell scripts for automated macOS machine setup.
 
 - shell will be set to [zsh](zsh.org) with some plugins like autocomplete, and a fuzzy finder
-- sets the color scheme to tomorrow night eightes with the [inconsolata font](http://levien.com/type/myfonts/inconsolata.html)
+- sets the color scheme to tomorrow night eightes with the [inconsolata nerd font](http://levien.com/type/myfonts/inconsolata.html)
 - *.dev will always resolve to 127.0.0.1 (thanks dnsmasq!)
 - sets up [my dotfiles](https://github.com/jedahan/dotfiles) which are neovim oriented
+- locks down safari to be more secure
 
 ## Usage
 
@@ -17,6 +18,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
   2. Installs commandline and gui software specified in `applications.zsh`
   3. Installs application extensions, add-ons, and plug-ins with `dotfiles.sh`
   4. Applies gui application preferences in `defaults.sh`
+  5. Locks down safari in `security.sh`
 
 ## Software
 
