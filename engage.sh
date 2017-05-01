@@ -1,5 +1,6 @@
 set -e
 
+echo " hi"
 echo "root permissions are required for a few commands, asking upfront"
 sudo -v
 # Keep-alive: update existing `sudo` time stamp until this script has finished
@@ -37,3 +38,5 @@ zsh applications.zsh
 bash dotfiles.sh
 bash defaults.sh
 bash security.sh
+
+echo " setup complete!"
