@@ -25,18 +25,13 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 ### commandline software
 
 [aircrack-ng](aircrack-ng.org)
-, [android-sdk](developer.android.com/index.html)
-, [assh](assh.io)
 , [avr-libc](www.nongnu.org/avr-libc)
 , [avrdude](www.nongnu.org/avrdude)
 , [dnsmasq](thekelleys.org.uk/dnsmasq/doc.html)
 , [exa](the.exa.website/)
-, [fceux](www.fceux.com)
 , [fzf](github.com/junegunn/fzf)
 , [git](git-scm.com)
 , [gnuradio](gnuradio.org)
-, [go](golang.org)
-, [horndis](joshuawise.com/horndis)
 , [hub](hub.github.com)
 , [jq](stedolan.github.io/jq)
 , [lolcat](github.com/ur0/lolcat)
@@ -75,8 +70,6 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Deckset](google.com/?g=deckset)
 , [Firefox](mozilla.org)
 , [Filckr Uploadr](www.flickr.com/tools)
-, [Fritzing](fritzing.org)
-, [Gitify](gitify.io)
 , [Hex Fiend](ridiculousfish.com/hexfiend)
 , [Horndis](joshuawise.com/horndis)
 , [iTerm2](iterm2.com)
@@ -91,9 +84,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Transmission](transmissionbt.com)
 , [Textual](codeux.com/textual)
 , [Twitter](twitter.com)
-, [Vagrant](vagrantup.com)
 , [Virtualbox](virtualbox.org)
-, [Vlc](vlc.org)
 , [Wireshark](wireshark.org)
 , [XQuartz](xquartz.macosforge.org)
 
@@ -101,12 +92,10 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 
 - [ ] Generate new ssh keys
 - [ ] Set textual to have command-[ switch across networks
-- [ ] Alfred - [activate powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)
-- [ ] Masterpassword - set username
-- [ ] Firefox - login to sync
-- [ ] Dash - activate license
-- [ ] Dash - integrate with Alfred
-- [ ] Battle.Net - run installer
-- [ ] Set textual to have command-[ switch across networks
-
-- [ ] Add [webster's dictionary](http://jsomers.net/blog/dictionary)
+- [ ] [Activate Alfred powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)
+- [ ] Set Masterpassword username
+- [ ] Login to Firefox Sync
+- [ ] Activate Dash license
+- [ ] Integrate Dash with Alfred
+- [ ] Run Battle.Net installer
+- [ ] Figure out how to remap caps lock to control via defaults

@@ -46,11 +46,6 @@ defaults write com.apple.dock orientation -string "right"
 # Set clock format
 defaults write com.apple.menuextra.clock DateFormat -string "h:mm "
 
-## Finder
-
-# Finder: Open /Volumes/Data folder by default
-defaults write com.apple.finder NewWindowTargetPath -string "file:///Volumes/data/"
-
 ## Cleanup
 
 # Kill affected applications

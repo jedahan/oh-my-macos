@@ -29,13 +29,13 @@ mas -v > /dev/null 2>&1 || {
   brew install mas
   echo "Login to the App Store (credentials are NOT stored)"
   read -p "Apple ID: " apple_id
-  read -p "Password: " password -s
+  read -s -p "Password: " password
   mas signin $apple_id $password
   unset apple_id
   unset password
 }
 
 ./preferences.sh
-./applications.sh
+./applications.zsh
 ./dotfiles.sh
 ./defaults.sh
