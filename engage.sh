@@ -27,12 +27,10 @@ cargo -v > /dev/null 2>&1 || {
 mas -v > /dev/null 2>&1 || {
   echo "Installing mas"
   brew install mas
-  echo "Login to the App Store (credentials are NOT stored)"
-  read -p "Apple ID: " apple_id
-  read -s -p "Password: " password
-  mas signin $apple_id $password
-  unset apple_id
-  unset password
+  mas account | grep @ || {
+      read -p "What is your App Store Apple Id? " apple_id
+      run mas signin $apple_id
+  }
 }
 
 ./preferences.sh
