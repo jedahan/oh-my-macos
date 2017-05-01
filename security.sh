@@ -54,19 +54,19 @@ echo "Disable spotlight universal search (don't send info to Apple)"
 defaults write com.apple.safari UniversalSearchEnabled -int 0
 
 echo "Disable wake on network access"
-run systemsetup -setwakeonnetworkaccess off
+sudo systemsetup -setwakeonnetworkaccess off
 
 echo "Enable Mac App Store automatic updates"
-run defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
+defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
 
 echo "Check for Mac App Store updates daily"
-run defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 echo "Download Mac App Store updates in the background"
-run defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
+defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
 
 echo "Install Mac App Store system data files & security updates"
-run defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
+defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 
 echo "Turn on Mac App Store auto-update"
-run defaults write com.apple.commerce AutoUpdate -bool true
+defaults write com.apple.commerce AutoUpdate -bool true

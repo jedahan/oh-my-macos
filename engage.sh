@@ -29,7 +29,7 @@ mas -v > /dev/null 2>&1 || {
   brew install mas
   mas account | grep @ || {
       read -p "What is your App Store Apple Id? " apple_id
-      run mas signin $apple_id
+      mas signin $apple_id
   }
 }
 
