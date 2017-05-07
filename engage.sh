@@ -14,11 +14,13 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
   sudo /usr/sbin/softwareupdate -i $PRODID -v
 }
 
+export PATH=/usr/local/bin:$PATH
 brew -v > /dev/null 2>&1 || {
   echo "Installing homebrew"
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
+source $HOME/.cargo/env 2>/dev/null
 cargo -v > /dev/null 2>&1 || {
   echo "Installing rustup & rust"
   curl https://sh.rustup.rs -sSf | sh
@@ -35,8 +37,8 @@ mas -v > /dev/null 2>&1 || {
 
 bash preferences.sh
 zsh applications.zsh
+bash security.sh
 bash dotfiles.sh
 bash defaults.sh
-bash security.sh
 
 echo " setup complete!"

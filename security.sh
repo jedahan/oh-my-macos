@@ -70,3 +70,19 @@ defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 
 echo "Turn on Mac App Store auto-update"
 defaults write com.apple.commerce AutoUpdate -bool true
+
+echo "Setup Master Password"
+read -p "What is your master password username? " mp_username
+defaults write com.lyndir.lhunath.MasterPassword.Mac usedUserName -string "$mp_username"
+defaults write com.lyndir.lhunath.MasterPassword.Mac firstRun -int 0
+defaults write com.lyndir.lhunath.MasterPassword.Mac fullScreen -int 0
+defaults write com.lyndir.lhunath.MasterPassword.Mac hidePasswords -int 1
+defaults write com.lyndir.lhunath.MasterPassword.Mac rememberLogin -int 1
+
+echo "Generating new ssh key for github"
+mpw -u "$mp_username" -t max
+ssh-keygen -t ed25519 -f ~/.ssh/github.com
+ssh-add -k ~/.ssh/github.com
+pbcopy < ~/.ssh/github.com.pub
+echo "Copied gitub public key to clipboard"
+open https://github.com/settings/keys

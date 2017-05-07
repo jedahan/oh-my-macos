@@ -1,8 +1,4 @@
 set -e
-echo "Enable accessibility for Cinch"
-[ -x /Applications/Cinch.app ] && \
-  sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db \
-  "INSERT INTO access VALUES('kTCCServiceAccessibility','com.irradiatedsoftware.Cinch',0,1,1,NULL);"
 
 echo "Set iTerm2 settings folder to $HOME/.config/iterm2"
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/.config/iterm2"

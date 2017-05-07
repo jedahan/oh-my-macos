@@ -75,7 +75,6 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Hex Fiend](ridiculousfish.com/hexfiend)
 , [Horndis](joshuawise.com/horndis)
 , [iTerm2](iterm2.com)
-, [Java](www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 , [Master Password](masterpasswordapp.com)
 , [mini vMac](www.gryphel.com/c/minivmac)
 , [Slack](slack.com)
@@ -92,12 +91,6 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 
 ## Postinstall Checklist
 
-- [ ] Generate new ssh keys
-- [ ] Set textual to have command-[ switch across networks
 - [ ] [Activate Alfred powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)
-- [ ] Set Masterpassword username
 - [ ] Login to Firefox Sync
-- [ ] Activate Dash license
-- [ ] Integrate Dash with Alfred
 - [ ] Run Battle.Net installer
-- [ ] Figure out how to remap caps lock to control via defaults
