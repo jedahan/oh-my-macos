@@ -62,12 +62,12 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 ### gui software
 
 [quicklook plugins](github.com/sindresorhus/quick-look-plugins)
-, [Alfred](alfredapp.com)
 , [Android File Transfer](android.com/filetransfer)
 , [Arduino](arduino.cc)
 , [Atom](atom.io)
 , [Backblaze](backblaze.com)
 , [Battle.net](battle.net)
+, [Cerebro](cerebroapp.com)
 , [Cinch](irradiatedsoftware.com/cinch/)
 , [Dash](kapeli.com/dash)
 , [Deckset](google.com/?g=deckset)
@@ -92,6 +92,5 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 
 ## Postinstall Checklist
 
-- [ ] [Activate Alfred powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)
 - [ ] Login to Firefox Sync
 - [ ] Run Battle.Net installer

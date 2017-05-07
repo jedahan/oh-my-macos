@@ -29,6 +29,7 @@ brew -v && {
     wireshark
     xquartz
     qlvideo
+    cerebro
     master-password
     gpgtools
     firefox
@@ -65,7 +66,6 @@ brew -v && {
   )
 
   apps=(
-    alfred
     android-file-transfer
     arduino
     atom
