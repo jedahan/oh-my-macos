@@ -17,18 +17,23 @@ brew -v && {
     ripgrep
     exa
     tmux
-    neovim
-    zpm
+    mpw
     neovim/neovim/neovim
   )
 
+  # apps that I want asap, or require password on install
   important_apps=(
+    horndis
+    virtualbox
+    wireshark
+    xquartz
+    qlvideo
     master-password
     gpgtools
     firefox
     iterm2
     textual
-    inconsolata-nerd-font
+    caskroom/fonts/font-inconsolata-nerd-font
   )
 
   crates=(
@@ -68,8 +73,6 @@ brew -v && {
     betterzipql
     dash
     hex-fiend
-    horndis
-    java
     lumen
     mini-vmac
     slack
@@ -77,16 +80,12 @@ brew -v && {
     spotify
     steam
     transmission
-    virtualbox
     virtualbox-extension-pack
-    wireshark
-    xquartz
     zulip
     qlcolorcode
     qlmarkdown
     qlprettypatch
     qlstephen
-    qlvideo
     quicklook-csv
     quicklook-json
     suspicious-package
@@ -106,8 +105,8 @@ brew -v && {
   }
 
   for cli in $important_clis; do brewinstall $cli; done
-  for app in $important_apps; do brewinstall $app; done
-  for create in $crates; do crateinstall $crate; done
+  for app in $important_apps; do caskinstall $app; done
+  for crate in $crates; do crateinstall $crate; done
   for cli in $clis; do brewinstall $cli; done
   for app in $apps; do caskinstall $app; done
 
@@ -115,7 +114,7 @@ brew -v && {
   qlmanage -r
 }
 
-mas -v >/dev/null && {
+(( $+commands[mas] )) && {
   apps=(
     412529613 # Cinch
     896450579 # Textual
@@ -125,11 +124,11 @@ mas -v >/dev/null && {
     409789998 # Twitter
   )
 
-  for app in $apps; do mas install $app; done
+  for app in $apps; do mas install ${app%%#}; done
 }
 
-$+commands[http] || pip3 install httpie
-$+commands[livestreamer] || pip3 install livestreamer
+(( $+commands[http] )) || pip3 install httpie
+(( $+commands[livestreamer] )) || pip3 install livestreamer
 
 export GEM_HOME="${HOME}/.gems"
 export GEM_PATH="$GEM_HOME"
