@@ -18,6 +18,7 @@ brew -v && {
     exa
     tmux
     mpw
+    jedahan/homebrew-zpm/zpm
     neovim/neovim/neovim
   )
 
