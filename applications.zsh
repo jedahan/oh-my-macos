@@ -134,3 +134,6 @@ brew -v && {
 export GEM_HOME="${HOME}/.gems"
 export GEM_PATH="$GEM_HOME"
 gem install lolcommits
+pip3 install neovim
+gem install neovim
+pip2 install neovim
