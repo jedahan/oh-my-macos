@@ -7,6 +7,7 @@ Shell scripts for automated macOS machine setup.
 - *.dev will always resolve to 127.0.0.1 (thanks dnsmasq!)
 - sets up [my dotfiles](https://github.com/jedahan/dotfiles) which are neovim oriented
 - locks down safari to be more secure
+- creates master password + ssh keys
 
 ## Usage
 
@@ -18,7 +19,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
   2. Installs commandline and gui software specified in `applications.zsh`
   3. Installs application extensions, add-ons, and plug-ins with `dotfiles.sh`
   4. Applies gui application preferences in `defaults.sh`
-  5. Locks down safari in `security.sh`
+  5. Locks down safari, generates ssh and master password keys in `security.sh`
 
 ## Software
 
