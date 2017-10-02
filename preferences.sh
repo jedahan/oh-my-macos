@@ -50,6 +50,10 @@ defaults -currentHost write -g "com.apple.keyboard.modifiermapping.${vendor_id}-
 echo "Set background to 'Solid Gray Pro Ultra Dark'"
 osascript -e 'tell application "System Events" to set picture of every desktop to "/Library/Desktop Pictures/Solid Colors/Solid Gray Pro Ultra Dark.png"'
 
+echo "Remove launchpad animations"
+defaults write com.apple.dock springboard-show-duration -float 0
+defaults write com.apple.dock springboard-hide-duration -float 0
+
 for app in Finder Dock SystemUIServer cfprefsd; do killall "$app" > /dev/null 2>&1; done
 echo "Done. Dark interface, tap to click, caps to control, and scroll to zoom require a restart"
 
