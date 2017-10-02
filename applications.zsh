@@ -17,9 +17,7 @@ brew -v && {
     ripgrep
     exa
     tmux
-    mpw
-    jedahan/homebrew-zpm/zpm
-    neovim/neovim/neovim
+    neovim
   )
 
   # apps that I want asap, or require password on install
@@ -28,7 +26,6 @@ brew -v && {
     virtualbox
     wireshark
     xquartz
-    qlvideo
     cerebro
     master-password
     gpgtools
@@ -43,6 +40,7 @@ brew -v && {
     lolcat
     ripgrep
     tealdeer
+    zr
   )
 
   clis=(
@@ -71,22 +69,26 @@ brew -v && {
     atom
     backblaze
     battle-net
-    betterzipql
     dash
     hex-fiend
-    lumen
     mini-vmac
     slack
     soundnode
     spotify
     steam
     transmission
+    typora
     virtualbox-extension-pack
     zulip
+  )
+
+  quicklooks=(
+    betterzipql
     qlcolorcode
     qlmarkdown
     qlprettypatch
     qlstephen
+    qlvideo
     quicklook-csv
     quicklook-json
     suspicious-package
@@ -110,6 +112,7 @@ brew -v && {
   for crate in $crates; do crateinstall $crate; done
   for cli in $clis; do brewinstall $cli; done
   for app in $apps; do caskinstall $app; done
+  for quicklook in $quicklooks; do caskinstall $qiucklook; done
 
   brew cleanup
   qlmanage -r
