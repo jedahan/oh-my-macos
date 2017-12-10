@@ -1,13 +1,5 @@
 set -e
 
-echo "Set iTerm2 settings folder to $HOME/.config/iterm2"
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/.config/iterm2"
-defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
-
-echo "Hide Master Password passwords and remember login"
-defaults write com.lyndir.lhunath.MasterPassword.Mac hidePasswords -bool true
-defaults write com.lyndir.lhunath.MasterPassword.Mac rememberLogin -bool true
-
 echo "Enable encryption and blocklist for Transmission"
 defaults write org.m0k.transmission EncryptionRequire -bool true
 defaults write org.m0k.transmission BlocklistURL -string "http://list.iblocklist.com/?list=bt_level1&fileformat=p2p&archiveformat=gz"

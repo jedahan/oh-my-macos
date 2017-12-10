@@ -22,15 +22,7 @@ brew -v && {
 
   # apps that I want asap, or require password on install
   important_apps=(
-    horndis
-    virtualbox
-    wireshark
-    xquartz
-    cerebro
-    master-password
-    gpgtools
     firefox
-    iterm2
     textual
     caskroom/fonts/font-inconsolata-nerd-font
   )
@@ -46,7 +38,6 @@ brew -v && {
   clis=(
     aircrack-ng
     avrdude
-    go
     jq
     mpv
     mtr
@@ -59,26 +50,20 @@ brew -v && {
     tcpdump
     watch
     youtube-dl
-    osx-cross/homebrew-avr/avr-libc
-    osx-cross/homebrew-avr/avr-gcc
   )
 
   apps=(
-    android-file-transfer
     arduino
     atom
     backblaze
     battle-net
-    dash
     hex-fiend
     mini-vmac
     slack
-    soundnode
     spotify
     steam
     transmission
     typora
-    virtualbox-extension-pack
     zulip
   )
 
@@ -122,7 +107,6 @@ brew -v && {
   apps=(
     412529613 # Cinch
     896450579 # Textual
-    662763204 # Master Password
     847496013 # Deckset
     425424353 # The Unarchiver
     409789998 # Twitter
@@ -132,11 +116,11 @@ brew -v && {
 }
 
 (( $+commands[http] )) || pip3 install httpie
-(( $+commands[livestreamer] )) || pip3 install livestreamer
+(( $+commands[streamlink] )) || pip3 install streamlink
 
 export GEM_HOME="${HOME}/.gems"
 export GEM_PATH="$GEM_HOME"
-gem install lolcommits
-pip3 install neovim
-gem install neovim
-pip2 install neovim
+
+(( $+commands[lolcommits] )) || gem install lolcommits
+pip3 show neovim || pip3 install neovim
+gem list neovim | grep $_ || gem install $_

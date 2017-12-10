@@ -19,7 +19,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
   2. Installs commandline and gui software specified in `applications.zsh`
   3. Installs application extensions, add-ons, and plug-ins with `dotfiles.sh`
   4. Applies gui application preferences in `defaults.sh`
-  5. Locks down safari, generates ssh and master password keys in `security.sh`
+  5. Locks down safari `security.sh`
 
 ## Software
 
@@ -48,6 +48,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [python](python.org)
 , [ripgrep](blog.burntsushi.net/ripgrep)
 , [ruby](ruby-lang.org)
+, [streamlink](streamlink.github.io)
 , [tcpdump](tcpdump.org)
 , [tealdeer (tldr)](github.com/dbrgn/tealdeer)
 , [tmux](tmux.github.io)
@@ -62,19 +63,15 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 ### gui software
 
 [quicklook plugins](github.com/sindresorhus/quick-look-plugins)
-, [Android File Transfer](android.com/filetransfer)
 , [Arduino](arduino.cc)
 , [Atom](atom.io)
 , [Backblaze](backblaze.com)
 , [Battle.net](battle.net)
-, [Cerebro](cerebroapp.com)
 , [Cinch](irradiatedsoftware.com/cinch/)
 , [Deckset](google.com/?g=deckset)
 , [Firefox](mozilla.org)
 , [Filckr Uploadr](www.flickr.com/tools)
 , [Hex Fiend](ridiculousfish.com/hexfiend)
-, [Horndis](joshuawise.com/horndis)
-, [Master Password](masterpasswordapp.com)
 , [mini vMac](www.gryphel.com/c/minivmac)
 , [Slack](slack.com)
 , [Spotify](spotify.com)
@@ -85,11 +82,4 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Transmission](transmissionbt.com)
 , [Textual](codeux.com/textual)
 , [Twitter](twitter.com)
-, [Virtualbox](virtualbox.org)
 , [Wireshark](wireshark.org)
-, [XQuartz](xquartz.macosforge.org)
-
-## Postinstall Checklist
-
-- [ ] Login to Firefox Sync
-- [ ] Run Battle.Net installer
