@@ -44,11 +44,11 @@ brew -v && {
     netcat6
     ngrep
     nmap
-    node
     ruby
     trash
     tcpdump
     watch
+    yarn
     youtube-dl
   )
 
