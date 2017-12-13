@@ -44,6 +44,7 @@ brew -v && {
     netcat6
     ngrep
     nmap
+    paritytech/paritytech/parity
     ruby
     trash
     tcpdump
@@ -72,7 +73,6 @@ brew -v && {
     qlcolorcode
     qlmarkdown
     qlprettypatch
-    qlstephen
     qlvideo
     quicklook-csv
     quicklook-json
