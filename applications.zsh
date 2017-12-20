@@ -18,6 +18,7 @@ brew -v && {
     exa
     tmux
     neovim
+    fd
   )
 
   # apps that I want asap, or require password on install
