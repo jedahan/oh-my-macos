@@ -125,3 +125,4 @@ export GEM_PATH="$GEM_HOME"
 (( $+commands[lolcommits] )) || gem install lolcommits
 pip3 show neovim || pip3 install neovim
 gem list neovim | grep $_ || gem install $_
+gem list vj | grep $_ || gem install $_

@@ -55,6 +55,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [tmux](tmux.github.io)
 , [trash](hasseg.org/trash)
 , [vice](vice-emu.sourceforge.net)
+, [vj](github.com/busyloop/vj)
 , [watch](procps.sourceforge.net)
 , [xsv](github.com/BurntSushi/xsv)
 , [youtube-dl](rg3.github.io/youtube-dl)
