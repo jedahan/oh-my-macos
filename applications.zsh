@@ -21,19 +21,10 @@ brew -v && {
     fd
   )
 
-  # apps that I want asap, or require password on install
   important_apps=(
     firefox
     textual
     caskroom/fonts/font-inconsolata-nerd-font
-  )
-
-  crates=(
-    cargo-update
-    lolcat
-    ripgrep
-    tealdeer
-    zr
   )
 
   clis=(
@@ -80,28 +71,31 @@ brew -v && {
     suspicious-package
   )
 
-  function brewinstall() {
-    brew list $1 >/dev/null || brew install $_
-  }
+  function brewinstall() { brew list $1 >/dev/null || brew install $_ }
 
-  function caskinstall() {
-    brew cask list $1 >/dev/null || brew cask install $_
-  }
-
-  function crateinstall() {
-    [[ $1 =~ ^http ]] && git="--git" || git=""
-    cargo install $git $1
-  }
+  function caskinstall() { brew cask list $1 >/dev/null || brew cask install $_ }
 
   for cli in $important_clis; do brewinstall $cli; done
   for app in $important_apps; do caskinstall $app; done
-  for crate in $crates; do crateinstall $crate; done
   for cli in $clis; do brewinstall $cli; done
   for app in $apps; do caskinstall $app; done
-  for quicklook in $quicklooks; do caskinstall $qiucklook; done
+  for quicklook in $quicklooks; do caskinstall $qiucklook; done; qlmanage -r
+}
 
-  brew cleanup
-  qlmanage -r
+(( $+commands[cargo] )) && {
+  crates=(
+    cargo-update
+    lolcat
+    ripgrep
+    tealdeer
+    zr
+  )
+
+  function crateinstall() {
+    cargo install --list | grep $1 >/dev/null || cargo install $_
+  }
+
+  for crate in $crates; do crateinstall $crate; done
 }
 
 (( $+commands[mas] )) && {
@@ -116,13 +110,15 @@ brew -v && {
   for app in $apps; do mas install ${app%%#}; done
 }
 
-(( $+commands[http] )) || pip3 install httpie
-(( $+commands[streamlink] )) || pip3 install streamlink
+(( $+commands[pip3] )) && {
+  for pip in (neovim streamlink lolcommits); do (( $+commands[$pip] )) || pip3 install $pip; done
+  (( $+commands[http] )) || pip3 install httpie
+}
 
-export GEM_HOME="${HOME}/.gems"
-export GEM_PATH="$GEM_HOME"
-
-(( $+commands[lolcommits] )) || gem install lolcommits
-pip3 show neovim || pip3 install neovim
-gem list neovim | grep $_ || gem install $_
-gem list vj | grep $_ || gem install $_
+(( $+commands[gem] )) && {
+  export GEM_HOME="${HOME}/.gems"
+  export GEM_PATH="$GEM_HOME"
+  for gem in (neovim vj); do
+    gem list $gem | grep $_ || gem install $_
+  done
+}
