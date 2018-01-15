@@ -84,6 +84,7 @@ brew -v && {
 
 (( $+commands[cargo] )) && {
   crates=(
+    cargo-edit
     cargo-update
     lolcat
     ripgrep
