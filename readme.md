@@ -75,6 +75,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Filckr Uploadr](www.flickr.com/tools)
 , [Hex Fiend](ridiculousfish.com/hexfiend)
 , [mini vMac](www.gryphel.com/c/minivmac)
+, [Rocket](matthewpalmer.net/rocket)
 , [Slack](slack.com)
 , [Spotify](spotify.com)
 , [Steam](steampowered.com)

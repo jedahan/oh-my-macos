@@ -52,6 +52,7 @@ brew -v && {
     battle-net
     hex-fiend
     mini-vmac
+    rocket
     slack
     spotify
     steam
