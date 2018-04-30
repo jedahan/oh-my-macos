@@ -85,6 +85,8 @@ brew -v && {
 
 (( $+commands[cargo] )) && {
   crates=(
+    amp
+    bat
     cargo-edit
     cargo-update
     lolcat
