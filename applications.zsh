@@ -51,7 +51,9 @@ brew -v && {
     backblaze
     battle-net
     hex-fiend
+    middleclick
     mini-vmac
+    retroarch
     rocket
     slack
     spotify
