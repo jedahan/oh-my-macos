@@ -39,6 +39,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [git](git-scm.com)
 , [gnuradio](gnuradio.org)
 , [hub](hub.github.com)
+, [hyperfine](github.com/sharkdp/hyperfine),
 , [jq](stedolan.github.io/jq)
 , [lolcat](github.com/ur0/lolcat)
 , [mpv](mpv.io)
@@ -49,6 +50,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [nmap](nmap.org)
 , [nodejs](nodejs.org)
 , [python](python.org)
+, [racer](github.com/racer-rust/racer),
 , [ripgrep](blog.burntsushi.net/ripgrep)
 , [ruby](ruby-lang.org)
 , [streamlink](streamlink.github.io)

@@ -91,9 +91,12 @@ brew -v && {
     bat
     cargo-edit
     cargo-update
+    hyperfine
     lolcat
+    racer
     ripgrep
     tealdeer
+    xsv
     zr
   )
 
