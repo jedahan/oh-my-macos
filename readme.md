@@ -34,6 +34,8 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [bat](github.com/sharkdp/bat)
 , [dnsmasq](thekelleys.org.uk/dnsmasq/doc.html)
 , [exa](the.exa.website/)
+, [emma](https://github.com/maticzav/emma-cli)
+, [emoji](https://github.com/fengmk2/emoji)
 , [fd](github.com/sharkdp/fd)
 , [fzf](github.com/junegunn/fzf)
 , [git](git-scm.com)

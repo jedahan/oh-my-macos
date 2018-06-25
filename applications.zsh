@@ -131,3 +131,15 @@ brew -v && {
     gem list $gem | grep $_ || gem install $_
   done
 }
+
+(( $+commands[npm] )) && {
+  export NPM_CONFIG_PREFIX=/Volumes/data/tmp/npm/global
+  export NPM_CONFIG_CACHE=/Volumes/data/tmp/npm/cache
+  local clis=(
+    emma-cli
+    emoj
+  )
+  for cli in $clis; do
+    npm install --global $cli
+  done
+}
