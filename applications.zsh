@@ -87,6 +87,7 @@ brew -v && {
 
 (( $+commands[cargo] )) && {
   crates=(
+    alacritty
     amp
     bat
     cargo-edit
@@ -105,6 +106,10 @@ brew -v && {
   }
 
   for crate in $crates; do crateinstall $crate; done
+
+  wget https://raw.githubusercontent.com/jwilm/alacritty/fd79505fc328827ad6f384defbb324a6ca91ca47/alacritty.info \
+  && sudo tic -e alacritty,alacritty-direct alacritty.info
+  rm -f alacritty.info
 }
 
 (( $+commands[mas] )) && {
