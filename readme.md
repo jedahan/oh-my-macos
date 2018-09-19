@@ -1,11 +1,11 @@
-# jedahan's macOS Sierra setup
+# jedahan's macOS High Sierra setup
 
 Shell scripts for automated macOS machine setup.
 
 - shell will be set to [zsh](zsh.org) with some plugins like autocomplete, and a fuzzy finder
 - sets the color scheme to tomorrow night eightes with the [inconsolata nerd font](http://levien.com/type/myfonts/inconsolata.html)
 - *.dev will always resolve to 127.0.0.1 (thanks dnsmasq!)
-- sets up [my dotfiles](https://github.com/jedahan/dotfiles) which are neovim oriented
+- sets up [my dotfiles](https://github.com/jedahan/dotfiles) which are [amp](amp.rs) oriented
 - locks down safari to be more secure
 - creates master password + ssh keys
 
@@ -71,6 +71,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 ### gui software
 
 [quicklook plugins](github.com/sindresorhus/quick-look-plugins)
+, [Alacritty](github.com/jwilm/alacritty/#alacritty)
 , [Arduino](arduino.cc)
 , [Atom](atom.io)
 , [Backblaze](backblaze.com)
