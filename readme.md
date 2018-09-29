@@ -80,6 +80,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Deckset](google.com/?g=deckset)
 , [Firefox](mozilla.org)
 , [Filckr Uploadr](www.flickr.com/tools)
+, [Freecad](freecadweb.org)
 , [Hex Fiend](ridiculousfish.com/hexfiend)
 , [middleclick](rouge41.com/labs)
 , [mini vMac](www.gryphel.com/c/minivmac)

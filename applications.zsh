@@ -83,6 +83,7 @@ brew -v && {
   for cli in $clis; do brewinstall $cli; done
   for app in $apps; do caskinstall $app; done
   for quicklook in $quicklooks; do caskinstall $qiucklook; done; qlmanage -r
+  brew install --HEAD freecad/freecad/freecad --with-packaging-util
 }
 
 (( $+commands[cargo] )) && {
