@@ -7,9 +7,6 @@ echo "Set computer name to $name"
   scutil --set LocalHostName $name
 }
 
-echo "Hibernate to disk on battery"
-sudo pmset -b hibernatemode 25
-
 echo "Disable Gatekeeper"
 [[ `spctl --status` == 'assessments disabled' ]] || sudo spctl --master-disable
 
@@ -47,14 +44,10 @@ echo "Remap Caps Lock to Control"
 #product_id=$(ioreg -p IOUSB -c IOUSBDevice | grep -e class -e idProduct | grep Keyboard -A1 | grep idProduct | cut -d'=' -f2 | cut -d' ' -f2)
 #defaults -currentHost write -g "com.apple.keyboard.modifiermapping.${vendor_id}-${product_id}-0" -array '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771296</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771129</integer></dict>'
 
-echo "Set background to 'Solid Gray Pro Ultra Dark'"
-osascript -e 'tell application "System Events" to set picture of every desktop to "/Library/Desktop Pictures/Solid Colors/Solid Gray Pro Ultra Dark.png"'
-
 echo "Remove launchpad animations"
 defaults write com.apple.dock springboard-show-duration -float 0
 defaults write com.apple.dock springboard-hide-duration -float 0
 
 for app in Finder Dock SystemUIServer cfprefsd; do killall "$app" > /dev/null 2>&1; done
 echo "Done. Dark interface, tap to click, caps to control, and scroll to zoom require a restart"
-
 
