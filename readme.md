@@ -4,7 +4,6 @@ Shell scripts for automated macOS machine setup.
 
 - shell will be set to [zsh](zsh.org) with some plugins like autocomplete, and a fuzzy finder
 - sets the color scheme to tomorrow night eightes with the [inconsolata nerd font](http://levien.com/type/myfonts/inconsolata.html)
-- *.dev will always resolve to 127.0.0.1 (thanks dnsmasq!)
 - sets up [my dotfiles](https://github.com/jedahan/dotfiles) which are [amp](amp.rs) oriented
 - locks down safari to be more secure
 - creates master password + ssh keys
@@ -27,15 +26,12 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 
 ### commandline software
 
-[aircrack-ng](aircrack-ng.org)
-, [amp](amp.rs)
+[amp](amp.rs)
 , [avr-libc](www.nongnu.org/avr-libc)
 , [avrdude](www.nongnu.org/avrdude)
 , [bat](github.com/sharkdp/bat)
 , [dnsmasq](thekelleys.org.uk/dnsmasq/doc.html)
 , [exa](the.exa.website/)
-, [emma](https://github.com/maticzav/emma-cli)
-, [emoji](https://github.com/fengmk2/emoji)
 , [fd](github.com/sharkdp/fd)
 , [fzf](github.com/junegunn/fzf)
 , [git](git-scm.com)
@@ -59,7 +55,6 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [tcpdump](tcpdump.org)
 , [tealdeer (tldr)](github.com/dbrgn/tealdeer)
 , [tmux](tmux.github.io)
-, [trash](hasseg.org/trash)
 , [vice](vice-emu.sourceforge.net)
 , [vj](github.com/busyloop/vj)
 , [watch](procps.sourceforge.net)
@@ -74,18 +69,14 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Alacritty](github.com/jwilm/alacritty/#alacritty)
 , [Arduino](arduino.cc)
 , [Atom](atom.io)
-, [Backblaze](backblaze.com)
-, [Battle.net](battle.net)
 , [Cinch](irradiatedsoftware.com/cinch/)
 , [Deckset](google.com/?g=deckset)
 , [Firefox](mozilla.org)
 , [Filckr Uploadr](www.flickr.com/tools)
 , [Freecad](freecadweb.org)
 , [Hex Fiend](ridiculousfish.com/hexfiend)
-, [middleclick](rouge41.com/labs)
 , [mini vMac](www.gryphel.com/c/minivmac)
 , [retroarch](www.retroarch.com)
-, [Rocket](matthewpalmer.net/rocket)
 , [Slack](slack.com)
 , [Spotify](spotify.com)
 , [Steam](steampowered.com)
