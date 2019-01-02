@@ -28,6 +28,7 @@ brew -v && {
 
   clis=(
     avrdude
+    hub
     jq
     mpv
     mtr
