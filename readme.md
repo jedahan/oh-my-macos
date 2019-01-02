@@ -45,6 +45,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [netcat6](deepspace6.net/projects/netcat6.html)
 , [neovim](neovim.io)
 , [ngrep](ngrep.sourceforge.net)
+, [ngrok](ngrok.com)
 , [nmap](nmap.org)
 , [nodejs](nodejs.org)
 , [python](python.org)

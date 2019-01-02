@@ -46,6 +46,7 @@ brew -v && {
     atom
     hex-fiend
     mini-vmac
+    ngrok
     retroarch
     slack
     spotify
