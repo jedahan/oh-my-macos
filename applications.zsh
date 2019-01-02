@@ -35,6 +35,7 @@ brew -v && {
     ngrep
     nmap
     paritytech/paritytech/parity
+    pngcheck
     tcpdump
     watch
     youtube-dl

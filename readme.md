@@ -48,6 +48,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [nmap](nmap.org)
 , [nodejs](nodejs.org)
 , [python](python.org)
+, [pngcheck](www.libpng.org/pub/png/apps/pngcheck.html)
 , [racer](github.com/racer-rust/racer),
 , [ripgrep](blog.burntsushi.net/ripgrep)
 , [ruby](ruby-lang.org)
