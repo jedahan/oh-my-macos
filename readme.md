@@ -30,6 +30,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [avr-libc](www.nongnu.org/avr-libc)
 , [avrdude](www.nongnu.org/avrdude)
 , [bat](github.com/sharkdp/bat)
+, [coreutils](www.gnu.org/software/coreutils)
 , [dnsmasq](thekelleys.org.uk/dnsmasq/doc.html)
 , [exa](the.exa.website/)
 , [fd](github.com/sharkdp/fd)
