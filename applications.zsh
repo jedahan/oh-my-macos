@@ -58,14 +58,15 @@ brew -v && {
   )
 
   quicklooks=(
-    betterzipql
     qlcolorcode
-    qlmarkdown
-    qlprettypatch
+    qlstephen
+    qlcommonmark
+    qlimagesize
+    webpquicklook
     qlvideo
-    quicklook-csv
     quicklook-json
-    suspicious-package
+    qlprettypatch
+    quicklook-csv
   )
 
   function brewinstall() { brew list $1 >/dev/null || brew install $_ }
