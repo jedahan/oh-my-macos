@@ -37,6 +37,7 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [fzf](github.com/junegunn/fzf)
 , [git](git-scm.com)
 , [gnuradio](gnuradio.org)
+, [hecate](github.com/evanmiller/hecate)
 , [hexyl](github.com/sharkdp/hexyl)
 , [hub](hub.github.com)
 , [hyperfine](github.com/sharkdp/hyperfine)

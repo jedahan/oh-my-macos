@@ -44,6 +44,10 @@ brew -v && {
     youtube-dl
   )
 
+  gos=(
+    "hecate github.com/evanmiller/hecate"
+  )
+
   apps=(
     arduino
     atom
@@ -75,9 +79,12 @@ brew -v && {
 
   function caskinstall() { brew cask list $1 >/dev/null || brew cask install $_ }
 
+  function goinstall() { (( $+commands[$1] )) || go get -u $2 }
+
   for cli in $important_clis; do brewinstall $cli; done
   for app in $important_apps; do caskinstall $app; done
   for cli in $clis; do brewinstall $cli; done
+  for cli in $gos; do goinstall ${(s: :)cli}; done
   for app in $apps; do caskinstall $app; done
   for quicklook in $quicklooks; do caskinstall $qiucklook; done; qlmanage -r
   brew install --HEAD freecad/freecad/freecad --with-packaging-util
