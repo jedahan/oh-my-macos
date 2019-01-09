@@ -29,6 +29,7 @@ brew -v && {
   clis=(
     avrdude
     coreutils
+    hexyl
     hub
     jq
     mpv

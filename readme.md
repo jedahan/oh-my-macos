@@ -37,8 +37,9 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [fzf](github.com/junegunn/fzf)
 , [git](git-scm.com)
 , [gnuradio](gnuradio.org)
+, [hexyl](github.com/sharkdp/hexyl)
 , [hub](hub.github.com)
-, [hyperfine](github.com/sharkdp/hyperfine),
+, [hyperfine](github.com/sharkdp/hyperfine)
 , [jq](stedolan.github.io/jq)
 , [lolcat](github.com/ur0/lolcat)
 , [mpv](mpv.io)
