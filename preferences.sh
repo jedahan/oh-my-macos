@@ -16,7 +16,8 @@ defaults write com.apple.AppleMultitouch.trackpad Clicking -int 1
 
 echo "Enable fast key-repeat"
 defaults write -g ApplePressAndHoldEnabled -bool false
-defaults write -g KeyRepeat -int 0.02
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 0.1
 
 echo "Switch to Dark interface"
 defaults write -globalDomain AppleInterfaceStyle -string Dark
