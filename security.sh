@@ -1,5 +1,14 @@
 set -e
 
+echo "Disable Safari 'wOuLd YoU lIkE tO TrY sAfArI' popup"
+defaults write com.apple.coreservices.uiagent CSUIHasSafariBeenLaunched -bool true
+defaults write com.apple.coreservices.uiagent CSUIRecommendSafariNextNotificationDate -date 2050-01-01T00:00:00Z
+defaults write com.apple.coreservices.uiagent CSUILastOSVersionWhereSafariRecommendationWasMade -float 10.99
+
+echo "Disable Safari 'dO yOu WaNt To ChAnGe YoUr DeFaUlT bRoWsEr?'"
+defaults write com.apple.Safari DefaultBrowserDateOfLastPrompt -date '2050-01-01T00:00:00Z'
+defaults write com.apple.Safari DefaultBrowserPromptingState -int 2
+
 echo "Disable Safari from auto-filling sensitive data"
 defaults write ~/Library/Preferences/com.apple.Safari AutoFillCreditCardData -bool false
 defaults write ~/Library/Preferences/com.apple.Safari AutoFillFromAddressBook -bool false
