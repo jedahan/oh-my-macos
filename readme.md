@@ -90,4 +90,5 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Transmission](transmissionbt.com)
 , [Textual](codeux.com/textual)
 , [Twitter](twitter.com)
+, [VS Code](code.visualstudio.com)
 , [Wireshark](wireshark.org)

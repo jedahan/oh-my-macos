@@ -60,6 +60,7 @@ brew -v && {
     steam
     transmission
     typora
+    visual-studio-code
     zulip
   )
 

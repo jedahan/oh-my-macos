@@ -18,3 +18,5 @@ test -f $HOME/.dotfiles || {
   git --git-dir=$HOME/.dotfiles --work-tree=$HOME config status.showUntrackedFiles no
 }
 
+test -f $HOME/.config/vscode.extensions && \
+  xargs -n1 xcode --install-extension < $HOME/.config/vscode.extensions
