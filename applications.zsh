@@ -125,7 +125,7 @@ brew -v && {
 }
 
 (( $+commands[pip3] )) && {
-  for pip in (neovim streamlink lolcommits); do (( $+commands[$pip] )) || pip3 install $pip; done
+  for pip in (pynvim streamlink lolcommits); do (( $+commands[$pip] )) || pip3 install $pip; done
   (( $+commands[http] )) || pip3 install httpie
 }
 
