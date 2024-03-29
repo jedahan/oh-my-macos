@@ -19,9 +19,6 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write -g InitialKeyRepeat -int 10
 defaults write -g KeyRepeat -int 0.1
 
-echo "Switch to Dark interface"
-defaults write -globalDomain AppleInterfaceStyle -string Dark
-
 echo "Enable control + scroll for zooming"
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 
@@ -40,7 +37,7 @@ defaults write com.apple.dock orientation -string "right"
 echo "Set clock format to h:mm"
 defaults write com.apple.menuextra.clock DateFormat -string "h:mm "
 
-echo "Remap Caps Lock to Control"
+echo "TODO: Remap Caps Lock to Control"
 #vendor_id=$(ioreg -p IOUSB -c IOUSBDevice | grep -e class -e idVendor | grep Keyboard -A1 | grep idVendor | cut -d'=' -f2 | cut -d' ' -f2)
 #product_id=$(ioreg -p IOUSB -c IOUSBDevice | grep -e class -e idProduct | grep Keyboard -A1 | grep idProduct | cut -d'=' -f2 | cut -d' ' -f2)
 #defaults -currentHost write -g "com.apple.keyboard.modifiermapping.${vendor_id}-${product_id}-0" -array '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771296</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771129</integer></dict>'

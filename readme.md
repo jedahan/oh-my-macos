@@ -3,8 +3,8 @@
 Shell scripts for automated macOS machine setup.
 
 - shell will be set to [zsh](zsh.org) with some plugins like autocomplete, and a fuzzy finder
-- sets the color scheme to tomorrow night eightes with the [inconsolata nerd font](http://levien.com/type/myfonts/inconsolata.html)
-- sets up [my dotfiles](https://github.com/jedahan/dotfiles) which are [amp](amp.rs) oriented
+- sets the color scheme to [new-moon](https://taniarascia.github.io/new-moon/) with the [inconsolata nerd font](http://levien.com/type/myfonts/inconsolata.html)
+- sets up [my dotfiles](https://github.com/jedahan/dotfiles) which are [helix](https://helix-editor.com) oriented
 - locks down safari to be more secure
 - creates master password + ssh keys
 
@@ -26,69 +26,47 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 
 ### commandline software
 
-[amp](amp.rs)
-, [avr-libc](www.nongnu.org/avr-libc)
+[avr-libc](www.nongnu.org/avr-libc)
 , [avrdude](www.nongnu.org/avrdude)
 , [bat](github.com/sharkdp/bat)
 , [coreutils](www.gnu.org/software/coreutils)
-, [dnsmasq](thekelleys.org.uk/dnsmasq/doc.html)
-, [exa](the.exa.website/)
+, [eza](eza.rocks/)
 , [fd](github.com/sharkdp/fd)
 , [fzf](github.com/junegunn/fzf)
 , [git](git-scm.com)
-, [gnuradio](gnuradio.org)
-, [hecate](github.com/evanmiller/hecate)
-, [hexyl](github.com/sharkdp/hexyl)
 , [hub](hub.github.com)
 , [hyperfine](github.com/sharkdp/hyperfine)
-, [jq](stedolan.github.io/jq)
-, [lolcat](github.com/ur0/lolcat)
 , [mpv](mpv.io)
 , [mtr](www.bitwizard.nl/mtr)
 , [netcat6](deepspace6.net/projects/netcat6.html)
-, [neovim](neovim.io)
 , [ngrep](ngrep.sourceforge.net)
 , [ngrok](ngrok.com)
 , [nmap](nmap.org)
 , [nodejs](nodejs.org)
 , [python](python.org)
 , [pngcheck](www.libpng.org/pub/png/apps/pngcheck.html)
-, [racer](github.com/racer-rust/racer),
 , [ripgrep](blog.burntsushi.net/ripgrep)
 , [ruby](ruby-lang.org)
-, [streamlink](streamlink.github.io)
 , [tcpdump](tcpdump.org)
-, [tealdeer (tldr)](github.com/dbrgn/tealdeer)
+, [tlrc (tldr)](tldr.sh/tlrc)
 , [tmux](tmux.github.io)
 , [vice](vice-emu.sourceforge.net)
-, [vj](github.com/busyloop/vj)
 , [watch](procps.sourceforge.net)
-, [xsv](github.com/BurntSushi/xsv)
 , [youtube-dl](rg3.github.io/youtube-dl)
 , [zr](github.com/jedahan/zr)
 , [zsh](zsh.org)
 
 ### gui software
 
-[quicklook plugins](github.com/sindresorhus/quick-look-plugins)
-, [Alacritty](github.com/jwilm/alacritty/#alacritty)
-, [Arduino](arduino.cc)
-, [Atom](atom.io)
-, [Cinch](irradiatedsoftware.com/cinch/)
-, [Deckset](google.com/?g=deckset)
+[Arduino](arduino.cc)
 , [Firefox](mozilla.org)
 , [Filckr Uploadr](www.flickr.com/tools)
-, [Hex Fiend](ridiculousfish.com/hexfiend)
 , [mini vMac](www.gryphel.com/c/minivmac)
 , [retroarch](www.retroarch.com)
 , [Slack](slack.com)
 , [Spotify](spotify.com)
-, [Steam](steampowered.com)
-, [Textual](codeux.com/textual)
-, [Typora](typora.io)
-, [The Unarchiver](theunarchiver.com)
 , [Transmission](transmissionbt.com)
-, [Textual](codeux.com/textual)
 , [Twitter](twitter.com)
-, [VS Code](code.visualstudio.com)
+, [Wezterm](wezfurlong.org/wezterm)
 , [Wireshark](wireshark.org)
+, [Zed](zed.dev)
