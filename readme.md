@@ -1,4 +1,4 @@
-# jedahan's macOS High Sierra setup
+# jedahan's macOS Sonoma setup
 
 Shell scripts for automated macOS machine setup.
 
