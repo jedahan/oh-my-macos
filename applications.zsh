@@ -128,9 +128,7 @@ sudo softwareupdate --install --all
 }
 
 (($+commands[mas])) && {
-  echo "to install shapr3d, wireguard and xcode, run:"
-  echo mas signin
-  echo mas install 1091675654 # Shapr3D
-  echo mas install 1451685025 # WireGuard
-  echo mas install 497799835 # Xcode
+  mas install 1091675654 # Shapr3D
+  mas install 1451685025 # WireGuard
+  mas install 497799835 # Xcode
 }
