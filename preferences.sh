@@ -22,9 +22,6 @@ defaults write -g KeyRepeat -int 0.1
 echo "Enable control + scroll for zooming"
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 
-echo "Automatically hide and show the menu bar"
-defaults write -globalDomain _HIHideMenuBar -bool true
-
 echo "Automatically hide and show the Dock"
 defaults write com.apple.dock autohide -bool true
 
