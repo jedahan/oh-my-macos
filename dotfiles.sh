@@ -5,11 +5,6 @@ head /private/etc/hosts | grep github.com/StevenBlack/hosts || {
   sudo curl 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts' -a -o /private/etc/hosts
 }
 
-dscl . -read /Users/$USER UserShell | grep zsh || {
-  echo "setting shell to zsh"
-  sudo dscl . -create /Users/$USER UserShell $(brew --prefix)/bin/zsh
-}
-
 test -f $HOME/.dotfiles || {
   echo "cloning dotfiles"
   git clone --bare git://github.com/jedahan/dotfiles.git $HOME/.dotfiles
