@@ -5,7 +5,7 @@ echo "Updating macOS software"
 sudo softwareupdate --install --all
 
 # ! brew leaves --installed-on-request
-brew -v && {
+(($+commands[brew])) && {
   echo "updating homebrew"
   brew update
   brew install \
@@ -91,4 +91,46 @@ brew -v && {
     cargo-tauri \
     wireguard-vanity-address \
     zr
+}
+
+# ! brew leaves --installed-on-request
+(($+commands[brew])) && {
+  brew install --cask \
+    android-studio \
+    arduino-ide \
+    bitwarden \
+    discord \
+    element \
+    firefox \
+    inkscape \
+    kicad \
+    lycheeslicer \
+    macpass \
+    obs \
+    processing \
+    prusaslicer \
+    qbittorrent \
+    qflipper \
+    qt-creator \
+    raspberry-pi-imager \
+    signal \
+    slack \
+    steam \
+    vitals \
+    vscodium \
+    wireshark \
+    zulip
+
+  brew install --cask \
+    ftdi-vcp-driver \
+    prolific-pl2303 \
+    silicon-labs-vcp-driver
+}
+
+(($+commands[mas])) && {
+  echo "to install shapr3d, wireguard and xcode, run:"
+  echo mas signin
+  echo mas install 1091675654 # Shapr3D
+  echo mas install 1451685025 # WireGuard
+  echo mas install 497799835 # Xcode
 }
