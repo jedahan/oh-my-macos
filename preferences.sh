@@ -1,26 +1,18 @@
 set -e
-name="talon"
-echo "Set computer name to $name"
-[[ `hostname` == $name ]] || {
-  scutil --set ComputerName $name
-  scutil --set HostName $name
-  scutil --set LocalHostName $name
-}
 
-echo "Disable Gatekeeper"
-[[ `spctl --status` == 'assessments disabled' ]] || sudo spctl --master-disable
+name="talon" 
+echo "Set computer name to $name"; {
+  [[ "$(scutil --get ComputerName)" == "$name" ]] || scutil --set ComputerName $name
+  [[ "$(scutil --get LocalHostName)" == "$name" ]] || scutil --set LocalHostName $name
+}
 
 echo "Enable tap to click"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
-defaults write com.apple.AppleMultitouch.trackpad Clicking -int 1
 
 echo "Enable fast key-repeat"
 defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write -g InitialKeyRepeat -int 10
 defaults write -g KeyRepeat -int 0.1
-
-echo "Enable control + scroll for zooming"
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 
 echo "Automatically hide and show the Dock"
 defaults write com.apple.dock autohide -bool true
