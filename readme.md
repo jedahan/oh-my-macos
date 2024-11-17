@@ -1,4 +1,6 @@
-# jedahan's macOS Sonoma setup
+>! This has been simplified to a single [bootstrap.zsh][] script in [my dotfiles][]
+
+# jedahan's macOS Sequoia setup
 
 Shell scripts for automated macOS machine setup.
 
@@ -53,3 +55,6 @@ Edit [preferences.sh](/preferences.sh), [applications.zsh](/applications.zsh), a
 , [Transmission](transmissionbt.com)
 , [Wireshark](wireshark.org)
 , [Zed](zed.dev)
+
+[my dotfiles]: https://github.com/jedahan/dotfiles
+[bootstrap.zsh]: https://github.com/jedahan/dotfiles/blob/macOS/bootstrap.zsh
