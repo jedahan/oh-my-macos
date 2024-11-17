@@ -1,4 +1,5 @@
->! This has been simplified to a single [bootstrap.zsh][] script in [my dotfiles][]
+> [!WARNING]
+> This has been simplified to a single [bootstrap.zsh][] script in [my dotfiles][]
 
 # jedahan's macOS Sequoia setup
 
