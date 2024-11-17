@@ -2,7 +2,7 @@ set -e
 
 head /private/etc/hosts | grep github.com/StevenBlack/hosts || {
   echo "downloading hosts to block malware"
-  sudo curl 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts' -a -o /private/etc/hosts
+  sudo curl 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts' --append --output /private/etc/hosts
 }
 
 test -f $HOME/.dotfiles || {
